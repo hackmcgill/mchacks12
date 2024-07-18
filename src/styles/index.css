@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap');
+
+@font-face {
+    font-family: "Brown";
+    src: url("../assets/fonts/Brown-Regular.ttf");
+}
+
+html {
+    line-height: 1.15;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Brown";
+    color: #636363;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    background-color: #F8F8F8;
+}
+
+p {
+    font-family: Hind Siliguri, sans-serif;
+}
+
+b {
+    color: #f2463a;
+}
+
+a {
+    color: #f2463a;
+    transition: color 0.2s ease-in;
+}
+
+a:hover {
+    color: #f56f65;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bm-burger-button, .bm-menu-wrap {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .bm-burger-button, .bm-menu-wrap {
+        display: block;
+    }
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
