@@ -6,7 +6,7 @@ import Martlet from "../../assets/images/designs/hero-martlet.svg"
 import Button from "./Button"
 import HeroStyles from "./HeroStyles"
 import SignUpForm from "./SignUpForm"
-import McHacksImg from "../../assets/images/designs/mchacks-12-hero-logo.svg"
+import McHacksImg from "../../assets/images/designs/mchacks12-hero-logo.svg"
 
 const apply = () => {
   window.location = "https://app.mchacks.ca/"

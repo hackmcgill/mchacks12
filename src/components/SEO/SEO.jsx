@@ -32,7 +32,7 @@ SEO.defaultProps = {
     "McHacks 12",
   ],
   description:
-    "Canada’s original university hackathon. 24 hour long event of innovation, coding & mentorship happening January 27th - 28th at McGill University",
+    "Canada’s original university hackathon. 24 hour long event of innovation, coding & mentorship happening January 25th - 26th at McGill University",
   title: "McHacks",
 }
 
