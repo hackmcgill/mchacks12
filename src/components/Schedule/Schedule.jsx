@@ -8,7 +8,7 @@ import Event from "./Event"
 
 const Schedule = ({ visible }) => {
   const [day, _setDay] = useState(1)
-  const setDay = newDay => {
+  const setDay = (newDay) => {
     if (newDay !== day) {
       _setDay(newDay)
       window.scrollTo(0, 0)
@@ -66,7 +66,7 @@ const Schedule = ({ visible }) => {
       <div className="Events">
         {edges
           .map(({ node }) => node)
-          .filter(event => event.day === day)
+          .filter((event) => event.day === day)
           .map((event, index) => (
             <Event key={index} {...event} />
           ))}

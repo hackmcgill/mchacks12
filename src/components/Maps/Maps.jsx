@@ -59,7 +59,7 @@ const maps = [
 
 const Maps = ({ visible }) => {
   const [group, _setGroup] = useState(1)
-  const setGroup = newGroup => {
+  const setGroup = (newGroup) => {
     if (newGroup !== group) {
       _setGroup(newGroup)
       window.scrollTo(0, 0)
@@ -104,7 +104,7 @@ const Maps = ({ visible }) => {
 
       <div className="Maps">
         {maps
-          .filter(e => e.group === group)
+          .filter((e) => e.group === group)
           .map((e, i) => (
             <Floorplan key={i} {...e} />
           ))}

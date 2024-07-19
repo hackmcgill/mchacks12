@@ -23,9 +23,18 @@ const Hero = () => (
     <div className="hero__wrapper">
       <h1 className="hero__heading">McHacks 12</h1>
       <div className="hero__grid">
-      <h1 style={{ color: 'black', fontSize: '14rem', gridColumn: '1 / -1', margin: '-6rem' }}> {/* Remove and replace with image once image is available */}
-        McHacks 12
-      </h1>
+        <h1
+          style={{
+            color: "black",
+            fontSize: "15rem",
+            gridColumn: "1 / -1",
+            margin: "-6rem 0",
+          }}
+        >
+          {" "}
+          {/* Remove and replace with image once image is available */}
+          McHacks 12
+        </h1>
         {/* <img
           className="hero__heading-image"
           src={McHacksImg}
@@ -38,7 +47,7 @@ const Hero = () => (
           <h2 className="hero__grid__subheading">McGill University</h2>
         </div>
         <div className="hero__grid__date">
-          <h2 className="hero__grid__subheading">Date TBD</h2>
+          <h2 className="hero__grid__subheading">Jan 25-26, 2025</h2>
         </div>
         <div className="hero__grid__signup">
           <img className="hero__martlet" src={Martlet} alt="" />
