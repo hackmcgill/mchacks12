@@ -13,7 +13,7 @@ export const Links = styled.div`
     position: fixed;
     transition: right 0.25s ease-in-out;
     z-index: 1;
-    right: ${props => (props.$hasBorder ? "4rem" : "calc(14rem + 1vw)")};
+    right: ${(props) => (props.$hasBorder ? "4rem" : "calc(14rem + 1vw)")};
   }
 
   .Nav__mlh-banner {
@@ -24,8 +24,8 @@ export const Links = styled.div`
     width: 90px;
     height: auto;
     transition: opacity 0.15s ease-in-out;
-    opacity: ${props => (props.$hasBorder ? "0" : "1")};
-    pointer-events: ${props => (props.$hasBorder ? "none" : "")};
+    opacity: ${(props) => (props.$hasBorder ? "0" : "1")};
+    pointer-events: ${(props) => (props.$hasBorder ? "none" : "")};
     z-index: 0;
 
     img {

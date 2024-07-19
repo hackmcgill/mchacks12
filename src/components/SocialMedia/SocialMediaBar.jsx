@@ -10,11 +10,7 @@ import Twitter from "../../assets/images/logos/twitter-logo.svg"
 const SocialMediaBar = () => (
   <Container>
     <div className="SocialMediaBar__icon">
-      <a
-        href="https://devpost.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://devpost.com/" target="_blank" rel="noopener noreferrer">
         <img src={Devpost} alt="Devpost" />
       </a>
     </div>

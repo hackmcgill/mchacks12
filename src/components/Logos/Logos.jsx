@@ -5,8 +5,6 @@ import Content from "./Content"
 
 import Logo from "./Logo"
 import Tier from "./Tier"
-import ComingSoon from "../../assets/images/designs/comingSoon.svg"
-import Martlet from "../../assets/images/designs/martlet.svg"
 
 const Logos = ({ scrollRef }) => {
   const {
@@ -32,11 +30,11 @@ const Logos = ({ scrollRef }) => {
       {edges.length > 0 ? (
         <Content>
           <h1>Past Sponsors</h1>
-          {TIERS.map(tier => (
+          {TIERS.map((tier) => (
             <Tier key={tier}>
               {edges
                 .map(({ node }) => node)
-                .filter(sponsor => sponsor.tier === tier)
+                .filter((sponsor) => sponsor.tier === tier)
                 .map(({ link, image, alt }) => (
                   <Logo
                     key={link}

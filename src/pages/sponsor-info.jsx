@@ -5,7 +5,7 @@ import Nav from "../components/Nav/Nav"
 import Footer from "../components/Footer/Footer"
 import SponsorInfo from "../components/DocPages/SponsorInfo"
 
-const scrollTo = ref => {
+const scrollTo = (ref) => {
   if (!ref || !ref.current) {
     return
   }

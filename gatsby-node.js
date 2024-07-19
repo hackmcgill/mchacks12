@@ -20,7 +20,7 @@ exports.createPages = ({ graphql, actions }) => {
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions
 
-  const buildPersonType = name => {
+  const buildPersonType = (name) => {
     return schema.buildObjectType({
       name,
       fields: {
@@ -59,24 +59,25 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         },
         startTime: {
           type: "String!",
-          resolve: source => (source.startTime == null ? "" : source.startTime),
+          resolve: (source) =>
+            source.startTime == null ? "" : source.startTime,
         },
         endTime: {
           type: "String!",
-          resolve: source => (source.endTime == null ? "" : source.endTime),
+          resolve: (source) => (source.endTime == null ? "" : source.endTime),
         },
         description: {
           type: "String!",
-          resolve: source =>
+          resolve: (source) =>
             source.description == null ? "" : source.description,
         },
         company: {
           type: "String!",
-          resolve: source => (source.company == null ? "" : source.company),
+          resolve: (source) => (source.company == null ? "" : source.company),
         },
         prize: {
           type: "String!",
-          resolve: source => (source.prize == null ? "" : source.prize),
+          resolve: (source) => (source.prize == null ? "" : source.prize),
         },
       },
       interfaces: ["Node"],
@@ -95,7 +96,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         },
         alt: {
           type: "String!",
-          resolve: source => (source.alt == null ? "" : source.alt),
+          resolve: (source) => (source.alt == null ? "" : source.alt),
         },
       },
       interfaces: ["Node"],

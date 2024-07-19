@@ -28,21 +28,21 @@ function Carousel({ data }) {
         centeredSlides
         autoHeight
         breakpoints={{
-          "1400": {
+          1400: {
             slidesPerView: 5,
             spaceBetween: 20,
           },
-          "1085": {
+          1085: {
             slidesPerView: 4,
             spaceBetween: 10,
           },
-          "800": {
+          800: {
             slidesPerView: 3,
             spaceBetween: 5,
           },
         }}
       >
-        {data.map(dataEntry => {
+        {data.map((dataEntry) => {
           return (
             <SwiperSlide key={dataEntry.node.name}>
               <Individual

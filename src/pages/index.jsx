@@ -14,7 +14,7 @@ import CarouselSpeaker from "../components/Carousel/CarouselSpeaker"
 import CarouselMentorAndJudges from "../components/Carousel/CarouselMentorAndJudges"
 import CarouselRecruiter from "../components/Carousel/CarouselRecruiter"
 
-const scrollTo = ref => {
+const scrollTo = (ref) => {
   if (!ref || !ref.current) {
     return
   }

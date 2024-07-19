@@ -32,7 +32,7 @@ const Nav = ({
     return () => document.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const NavItems = mobile => (
+  const NavItems = (mobile) => (
     <>
       {scrollToAbout ? (
         <NavLink onClick={scrollToAbout} $mobile={mobile}>

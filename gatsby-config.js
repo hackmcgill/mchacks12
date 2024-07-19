@@ -25,7 +25,7 @@ module.exports = {
 
         // Default
         filterNode: () => true,
-        mapNode: node => node,
+        mapNode: (node) => node,
       },
     },
     {

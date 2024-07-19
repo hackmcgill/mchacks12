@@ -8,7 +8,7 @@ import Resources from "../components/Live/Resources"
 
 const LivePage = () => {
   const [activePage, _setActivePage] = useState("info")
-  const setActivePage = newPage => {
+  const setActivePage = (newPage) => {
     if (newPage !== activePage) {
       _setActivePage(newPage)
       window.scrollTo(0, 0)

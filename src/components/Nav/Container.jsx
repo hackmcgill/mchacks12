@@ -13,7 +13,9 @@ export const Container = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.4s background-color ease-in, 0.4s box-shadow ease-in;
+  transition:
+    0.4s background-color ease-in,
+    0.4s box-shadow ease-in;
 
   &.has-border,
   &.dark-background {
