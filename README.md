@@ -1,4 +1,4 @@
-# [McHacks 1](https://2023.mchacks.ca)2
+# [McHacks 12](https://mchacks.ca)
 
 This repository contains the code behind the static site of McHacks 12.
 
@@ -7,7 +7,7 @@ This repository contains the code behind the static site of McHacks 12.
 1. Make sure you have [node](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/lang/en/) installed.
 2. Run `yarn global add gatsby-cli` to install Gatsby CLI locally.
 3. Run `yarn` to install dependencies.
-4. Run `gatsby develop` to start dev server! 🚀
+4. Run `gatsby develop` / `yarn start` to start dev server! 🚀
 
 ## Scripts
 
@@ -49,12 +49,8 @@ See our [contributing guide](https://github.com/hackmcgill/mchacks7/blob/develop
 
 ## Deployment
 
-We are using Vercel to compile and host our code. When a PR is created, Vercel builds the site and generates a deploy preview to confirm everything is working as expected. Once code is merged to `master` branch, Vercel will promote the code to production at `2021.mchacks.ca`. Vercel also handles the SSL certificate for this site.
-
-Along with deploy previews, the `develop` branch is live at `mchacks8.now.sh` for an easier comparison to production.
-
-[![Deploy to Vercel](https://vercel.com/button)](/import/project?template=https://github.com/hackmcgill/mchacks7)
+We are using Vercel to compile and host our code. When a PR is created, Vercel builds the site and generates a deploy preview to confirm everything is working as expected. Once code is merged to `main` branch, Vercel will promote the code to production at `mchacks.ca`. Vercel also handles the SSL certificate for this site.
 
 ### Domains
 
-The primary domain for this site `mchacks.ca` is registered with the HackMcGill Namecheap and DNS is with Cloudflare. The secondary domain `mchacks.io` is registered with Cloudflare. `2021.mchacks.ca` and `2021.mchacks.io` have CNAME records pointing to `cname.vercel-dns.com`.
+The primary domain for this site `mchacks.ca` is registered with the HackMcGill Namecheap and DNS is with Cloudflare.
