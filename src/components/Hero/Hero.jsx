@@ -6,6 +6,7 @@ import Martlet from "../../assets/images/designs/hero-martlet.svg"
 import Button from "./Button"
 import HeroStyles from "./HeroStyles"
 import SignUpForm from "./SignUpForm"
+import McHacksImg from "../../assets/images/designs/mchacks-12-hero-logo.svg"
 
 const apply = () => {
   window.location = "https://app.mchacks.ca/"
@@ -23,23 +24,22 @@ const Hero = () => (
     <div className="hero__wrapper">
       <h1 className="hero__heading">McHacks 12</h1>
       <div className="hero__grid">
-        <h1
+        {/* <h1
           style={{
             color: "black",
             fontSize: "15rem",
             gridColumn: "1 / -1",
-            margin: "-6rem 0",
+            margin: "-3rem 0",
           }}
+          className="temp_hero__heading"
         >
-          {" "}
-          {/* Remove and replace with image once image is available */}
           McHacks 12
-        </h1>
-        {/* <img
+        </h1> */}
+        <img
           className="hero__heading-image"
           src={McHacksImg}
-          alt="McHacks 11"
-        /> */}
+          alt="McHacks 12"
+        />
         <div className="hero__grid__shapes">
           <img src={HeroShapesImg} alt="" />
         </div>
