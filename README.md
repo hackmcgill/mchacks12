@@ -53,4 +53,4 @@ We are using Vercel to compile and host our code. When a PR is created, Vercel b
 
 ### Domains
 
-The primary domain for this site `mchacks.ca` is registered with the HackMcGill Namecheap and DNS is with Cloudflare.
+The domains for this site `mchacks.ca` and `mchacks.io` have their DNS with Cloudflare. `2025.mchacks.ca` has a CNAME record pointing to `cname.vercel-dns.com`.
