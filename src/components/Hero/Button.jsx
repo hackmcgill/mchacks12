@@ -19,6 +19,13 @@ export const Button = styled.button`
   display: block;
   margin: auto;
 
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: ${styleVars.hackGold}AA; 
+    color: ${styleVars.hackWhite}AA; 
+  }
+
   &:hover {
     background-color: ${styleVars.hackWhite}ee;
     color: ${styleVars.darkYellow};
