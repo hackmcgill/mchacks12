@@ -58,7 +58,7 @@ const Hero = () => (
         </div>
       </div>
       {/* <Button onClick={apply}>Apply Now →</Button> */}
-      <Button onClick={apply}>Application Dashboard →</Button>
+      <Button disabled={true}>Applications Open Nov. 1st</Button>
       {/* <Button onClick={live}>Live Site →</Button> */}
     </div>
   </HeroStyles>
