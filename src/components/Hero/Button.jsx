@@ -22,8 +22,8 @@ export const Button = styled.button`
   &:disabled {
     cursor: not-allowed;
     pointer-events: none;
-    background-color: ${styleVars.hackGold}AA; 
-    color: ${styleVars.hackWhite}AA; 
+    background-color: ${styleVars.hackGold}AA;
+    color: ${styleVars.hackWhite}AA;
   }
 
   &:hover {
