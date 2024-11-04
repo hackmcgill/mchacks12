@@ -55,6 +55,9 @@ export const buttonHover = "#D03E36"
 export const faqBlue3 = "#598EFB"
 export const faqBlack = "#4D4D4D"
 
+// mchacks 13 colour palette
+export const hackRed = "#A51A4B";
+
 // global colors
 export const globalColorPrimary = hackWhite
 
