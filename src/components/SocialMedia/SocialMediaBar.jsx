@@ -1,11 +1,11 @@
 import React from "react"
 import Container from "./SocialMediaBarContainer"
 
-import Devpost from "../../assets/images/logos/devpost-logo.svg"
-import Facebook from "../../assets/images/logos/fb-logo.svg"
-import GitHub from "../../assets/images/logos/github-logo.svg"
-import Instagram from "../../assets/images/logos/ig-logo.svg"
-import Twitter from "../../assets/images/logos/twitter-logo.svg"
+import Devpost from "../../assets/images/logos/mchacks12-devpost-logo.svg"
+import Facebook from "../../assets/images/logos/mchacks12-fb-logo.svg"
+import GitHub from "../../assets/images/logos/mchacks12-github-logo.svg"
+import Instagram from "../../assets/images/logos/mchacks12-ig-logo.svg" 
+import Twitter from "../../assets/images/logos/mchacks12-x-logo.svg"
 
 const SocialMediaBar = () => (
   <Container>

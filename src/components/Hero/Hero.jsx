@@ -2,11 +2,11 @@ import React from "react"
 import HeroShapesImg from "../../assets/images/designs/hero-shapes.svg"
 import HeroColorBlur1 from "../../assets/images/designs/blur-1.png"
 import HeroColorBlur2 from "../../assets/images/designs/blur-2.png"
-import Martlet from "../../assets/images/designs/hero-martlet.svg"
+import Martlet from "../../assets/images/designs/mchacks13-hero-martlet.svg"
 import Button from "./Button"
 import HeroStyles from "./HeroStyles"
 import SignUpForm from "./SignUpForm"
-import McHacksImg from "../../assets/images/designs/mchacks12-hero-logo.svg"
+import McHacksImg from "../../assets/images/designs/mchacks13-hero-logo.svg"
 
 const apply = () => {
   window.location = "https://app.mchacks.ca/"

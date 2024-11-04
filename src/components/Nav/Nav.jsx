@@ -4,13 +4,11 @@ import { Link } from "gatsby"
 import { slide as Menu } from "react-burger-menu"
 
 import Container from "./Container"
-import Icon from "./Icon"
 import IconContainer from "./IconContainer"
 import Links from "./Links"
 import MobileMenu from "./MobileMenu"
 import NavLink from "./NavLink"
 
-import Logo from "../../assets/images/logos/mchacks-martlet.svg"
 import SocialMediaBar from "../SocialMedia/SocialMediaBar"
 
 import MLHBanner from "../../assets/images/mlh-trust-badge-2025-white.svg"
@@ -23,7 +21,7 @@ const Nav = ({
 }) => {
   const [hasBorder, setHasBorder] = useState(false)
   const handleScroll = () => {
-    setHasBorder(window.pageYOffset > 15)
+    setHasBorder(window.pageYOffset > 20)
   }
 
   useEffect(() => {
@@ -52,11 +50,11 @@ const Nav = ({
         </NavLink>
       ) : null}
 
-      {/* <NavLink href="https://app.mchacks.ca" $mobile={mobile}>
+      <NavLink href="https://app.mchacks.ca" $mobile={mobile}>
         Apply
       </NavLink>
 
-      <NavLink href="https://forms.gle/2CHq5PZZLxuirVCT6" $mobile={mobile}>
+      {/*<NavLink href="https://forms.gle/2CHq5PZZLxuirVCT6" $mobile={mobile}>
         Volunteer
       </NavLink> */}
     </>
@@ -70,9 +68,6 @@ const Nav = ({
     >
       <div>
         <IconContainer>
-          <Link to="/">
-            <Icon src={Logo} />
-          </Link>
         </IconContainer>
         <Links $hasBorder={hasBorder}>
           {NavItems(false)}

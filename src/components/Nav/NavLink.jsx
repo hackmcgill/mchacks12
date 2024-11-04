@@ -2,11 +2,11 @@ import styled from "styled-components"
 import * as styleVars from "../variable"
 
 export const NavLink = styled.a`
+  font-family: 'ArcadeClassic';
+  font-size: 24px;
   display: flex;
-  margin-right: 2.8rem;
-  margin-right: calc(1vw + 5px); // NEW
   cursor: pointer;
-  color: ${styleVars.primary};
+  color: ${styleVars.hackRed};
   text-decoration: none;
   transition: color 0.3s ease;
 
