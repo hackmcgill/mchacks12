@@ -15,6 +15,9 @@ import Logo from "../../assets/images/logos/mchacks-martlet.svg"
 const LiveNav = ({ switchPage = () => {}, activePage }) => {
   const NavItems = (
     <>
+      <Link to={"/"} className="home-link">
+        Home
+      </Link>
       <NavLink
         onClick={() => switchPage("info")}
         className={activePage === "info" ? "active" : ""}
@@ -27,23 +30,12 @@ const LiveNav = ({ switchPage = () => {}, activePage }) => {
       >
         Schedule
       </NavLink>
-      <NavLink
-        onClick={() => switchPage("resources")}
-        className={activePage === "resources" ? "active" : ""}
-      >
-        Sponsor Resources
-      </NavLink>
     </>
   )
   return (
     <Container className="dark-background">
-      <IconContainer>
-        <Link to="/">
-          <Icon src={Logo} />
-        </Link>
-      </IconContainer>
       <Links>{NavItems}</Links>
-      <Menu isOpen={true} styles={MobileMenu}>
+      <Menu isOpen={false} styles={MobileMenu}>
         {NavItems}
       </Menu>
     </Container>

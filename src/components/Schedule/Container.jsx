@@ -7,9 +7,16 @@ export const Container = styled.section`
   margin: auto;
   margin-bottom: 100px;
   margin-top: 130px;
+  font-family: "ArcadeClassic", sans-serif;
+  font-size: 1.2em;
 
   &.hidden {
     display: none !important;
+  }
+
+  .coming-soon {
+    margin-top: 20px;
+    font-size: 1.5em;
   }
 
   h2 {

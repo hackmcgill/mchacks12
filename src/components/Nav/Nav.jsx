@@ -18,6 +18,8 @@ const Nav = ({
   scrollToSponsor,
   scrollToFaq,
   darkBackground = false,
+  docPage = false,
+
 }) => {
   const [hasBorder, setHasBorder] = useState(false)
   const handleScroll = () => {
@@ -47,6 +49,12 @@ const Nav = ({
       {scrollToFaq ? (
         <NavLink onClick={scrollToFaq} $mobile={mobile}>
           FAQ
+        </NavLink>
+      ) : null}
+
+      {docPage ? (
+        <NavLink href="/" $mobile={mobile}>
+          Home
         </NavLink>
       ) : null}
 
@@ -84,6 +92,7 @@ const Nav = ({
           </div>
         </Links>
       </div>
+      <div className="background"></div>
       <Menu isOpen={true} styles={MobileMenu}>
         {NavItems(true)}
       </Menu>
