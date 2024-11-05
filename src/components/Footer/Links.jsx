@@ -3,7 +3,7 @@ import * as styleVars from "../variable"
 
 export const Links = styled.div`
   display: flex;
-  gap: 32px;
+  gap: 35px;
   justify-content: space-between;
   align-items: center;
 

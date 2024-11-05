@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useEffect } from "react"
 
 import SEO from "../components/SEO/SEO"
 import Nav from "../components/Nav/Nav"
@@ -14,26 +14,32 @@ import CarouselSpeaker from "../components/Carousel/CarouselSpeaker"
 import CarouselMentorAndJudges from "../components/Carousel/CarouselMentorAndJudges"
 import CarouselRecruiter from "../components/Carousel/CarouselRecruiter"
 
-const scrollTo = (ref) => {
-  if (!ref || !ref.current) {
-    return
+const scrollTo = (ref, offset = 100) => {
+  if (ref.current) {
+    window.scrollTo({
+      top: ref.current.offsetTop - offset,
+      behavior: 'smooth',
+    });
   }
-  window.scrollTo(0, ref.current.offsetTop - 100)
-}
+};
 
 const IndexPage = () => {
   const aboutRef = useRef(null)
   const sponsorRef = useRef(null)
   const faqRef = useRef(null)
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' }, 0);
+  }, []);
+
   return (
     <div>
       <SEO />
       <Nav
         scrollToAbout={() => scrollTo(aboutRef)}
-        scrollToSponsor={() => scrollTo(sponsorRef)}
-        scrollToFaq={() => scrollTo(faqRef)}
-        darkBackground
+        scrollToSponsor={() => scrollTo(sponsorRef, -150)}
+        scrollToFaq={() => scrollTo(faqRef, 0)}
+        darkBackground={true}
       />
       <Hero />
       <About scrollRef={aboutRef} />

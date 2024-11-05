@@ -17,6 +17,16 @@ export const NavLink = styled.a`
     background: transparent;
     color: white;
   }
+
+  .home-link {
+  font-family: 'ArcadeClassic';
+  font-size: 24px;
+  display: flex;
+  cursor: pointer;
+  color: ${styleVars.hackRed};
+  text-decoration: none;
+  transition: color 0.3s ease;}
+}
 `
 
 export default NavLink
