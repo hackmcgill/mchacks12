@@ -3,6 +3,41 @@ import * as styleVars from "../variable"
 
 export const HeroStyles = styled.section`
   padding-bottom: 520px;
+  background: #8CDCFE;
+
+  .hero__images-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+    .hero__heading-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero__martlet {
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      width: 10%; 
+      height: auto;
+      transform: translate(-90%, -85%);
+
+      @media only screen and (max-width: ${styleVars.mdUp}) {
+        width: 8%;
+      }
+
+      @media only screen and (max-width: ${styleVars.smUp}) {
+        width: 7%;
+      }
+
+      @media only screen and (max-width: ${styleVars.xsUp}) {
+        width: 6%;
+      }
+    }
+  }
 
   .hero__wrapper {
     display: flex;
@@ -13,32 +48,20 @@ export const HeroStyles = styled.section`
     padding-top: 260px;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-  }
-
-  .hero__color-blur-1,
-  .hero__color-blur-2 {
-    position: absolute;
-    z-index: -1;
-    width: 45%;
-  }
-
-  .hero__color-blur-2 {
-    right: 0;
-    top: 600px;
-    transform: translateY(-25%);
+    gap: 30px;
   }
 
   .hero__grid {
-    display: grid;
-    grid-template-columns: 243px 1fr 1fr;
-    grid-template-rows: 1fr 60px 130px;
-    gap: 28px;
-    max-width: 820px;
-    margin: 0 42px 0 42px;
+    display: flex;
+    gap: 50px;
+    max-width: 100%;
+    justify-content: flex-start;
+    margin-top: -20px;
+    letter-spacing: 0.5px;
+    word-spacing: 5px;
 
     & > div {
-      border: 2.5px solid ${styleVars.primary};
+      font-family: "ArcadeClassic", san-serif;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
@@ -77,19 +100,12 @@ export const HeroStyles = styled.section`
       position: relative;
       grid-column: 2 / span 2;
       grid-row: 3;
-
-      .hero__martlet {
-        position: absolute;
-        top: -26px;
-        right: -42px;
-      }
     }
 
     .hero__grid__text {
       font-size: 16px;
       font-weight: 400;
       text-align: center;
-      color: ${styleVars.secondary};
       margin: 0 8px 14px 8px;
       font-family: "Brown", san-serif;
     }
@@ -100,7 +116,7 @@ export const HeroStyles = styled.section`
       margin: 0;
       font-weight: 400;
       text-align: center;
-      color: ${styleVars.primary};
+      color: ${styleVars.hackRed};
     }
   }
 
@@ -110,8 +126,15 @@ export const HeroStyles = styled.section`
 
   @media only screen and (max-width: ${styleVars.mdUp}) {
     padding-bottom: 350px;
+
+    .hero__wrapper {
+      padding-top: 200px;
+      gap: 20px;
+    }
+
     .hero__grid {
       max-width: 720px;
+      margin: auto;
 
       .hero__grid__text {
         margin-bottom: 6px;
@@ -119,55 +142,139 @@ export const HeroStyles = styled.section`
 
       .hero__grid__signup {
         .hero__martlet {
-          height: 70px;
-          top: -28px;
-          right: -38px;
+          width: 8%;
+          top: 4%;
+          left: 4%;
         }
       }
     }
-  }
 
+    .hero__images-container {
+      max-width: 450px;
+
+      .hero__martlet {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .hero__grid__subheading {
+      font-size: 20px;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
   @media only screen and (max-width: ${styleVars.smUp}) {
     padding-bottom: 300px;
+
+    .hero__wrapper {
+      padding-top: 150px;
+      gap: 15px;
+    }
+
     .hero__grid {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
       max-width: 85%;
-      grid-template-columns: 1fr 1fr;
 
       .hero__heading-image {
         grid-column: 1 / span 2;
-        width: 100%;
+        width: 80%;
       }
 
       .hero__grid__shapes {
         display: none;
       }
 
-      .hero__grid__location {
-        grid-column: 1;
-        grid-row: 2;
-      }
-
+      .hero__grid__location,
       .hero__grid__date {
-        grid-column: 2;
-        grid-row: 2;
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
       }
 
       .hero__grid__signup {
         grid-column: 1 / span 2;
         grid-row: 3;
       }
+
+      .hero__grid__subheading {
+        font-size: 18px;
+      }
+    }
+
+    .hero__images-container {
+      max-width: 300px;
+      margin-top: 10vh;
+
+      .hero__martlet {
+        width: 15%;
+        top: 6%;
+        left: 8%;
+      }
+    }
+
+    .hero__grid__signup {
+      width: 100%;
+      padding: 0 10px;
+    }
+
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
     }
   }
 
   @media only screen and (max-width: ${styleVars.xsUp}) {
     padding-bottom: 200px;
-    .hero__color-blur-1 {
-      width: 70%;
+
+    .hero__wrapper {
+      padding-top: 100px;
+      gap: 10px;
     }
 
-    .hero__color-blur-2 {
-      top: 800px;
-      width: 70%;
+    .hero__grid {
+      max-width: 90%;
+
+      .hero__grid__subheading {
+        font-size: 16px;
+      }
+    }
+
+    .hero__images-container {
+      max-width: 250px;
+
+      .hero__martlet {
+        width: 13%;
+        top: 10%;
+        left: 5%;
+      }
+    }
+
+    .hero__grid__signup {
+      padding: 0 5px;
+    }
+
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+
+  @media only screen and (max-width: ${styleVars.smUp}) {
+    .hero__grid {
+      .hero__grid__location,
+      .hero__grid__date {
+        text-align: center;
+      }
+    }
+
+    .hero__images-container {
+      margin-bottom: 20px;
     }
   }
 `

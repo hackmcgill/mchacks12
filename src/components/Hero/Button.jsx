@@ -2,22 +2,23 @@ import styled from "styled-components"
 import * as styleVars from "../variable"
 
 export const Button = styled.button`
-  font-family: Brown, sans-serif;
+  font-family: "ArcadeClassic", sans-serif;
   font-weight: 400;
   font-size: 18px;
   text-transform: none;
   color: ${styleVars.hackWhite};
-  background-color: ${styleVars.hackGold};
+  background-color: ${styleVars.hackBlack};
   border-radius: 36px;
   border: none;
   transition: all 0.3s ease;
-  box-shadow: 2px 4px 16px 0 ${styleVars.hackGold}66;
+  box-shadow: 2px 4px 16px 0 ${styleVars.hackGrey}66;
   padding-top: 14px;
   padding-bottom: 15px;
   padding-left: 27px;
   padding-right: 27px;
   display: block;
   margin: auto;
+  word-spacing: 5px;
 
   &:disabled {
     cursor: not-allowed;
@@ -28,7 +29,7 @@ export const Button = styled.button`
 
   &:hover {
     background-color: ${styleVars.hackWhite}ee;
-    color: ${styleVars.darkYellow};
+    color: ${styleVars.hackBlack};
   }
 
   @media only screen and (min-width: 1077px) {

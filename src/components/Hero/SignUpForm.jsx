@@ -5,23 +5,50 @@ import * as styleVars from "../variable"
 
 import "./mailchimp.scss"
 
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import CustomArrowIcon from '../../assets/images/designs/mchacks12-arrow.svg'
+import useIsMobile from "../../hooks/useIsMobile"
 
 export const ArrowButton = styled.button`
-  background-color: ${styleVars.hackGold};
-  color: ${styleVars.hackWhite};
-  border-radius: 50%;
+  background-color: #F13431;
+  border-radius: 43%;
   border: none;
   transition: all 0.15s ease-in-out;
-  top: 1px;
-  right: 0;
   width: 54px;
   height: 54px;
   margin-left: -8px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  border: 2px solid black;
 
   &:hover {
     background-color: ${styleVars.buttonHover};
+  }
+
+  img {
+    width: 35px;
+    height: 35px; 
+    object-fit: contain; 
+  }
+
+  @media only screen and (max-width: ${styleVars.smUp}) {
+    width: 35px;
+    height: 35px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media only screen and (max-width: ${styleVars.xsUp}) {
+    width: 35px;
+    height: 35px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
   }
 `
 
@@ -33,6 +60,12 @@ export const MceErrorResponse = styled.div`
   font-size: 15px !important;
   font-weight: 400 !important;
   background-color: rgba(107, 5, 5, 0) !important;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 14px !important;
+    padding: 8px 8px !important;
+    margin-bottom: 0.8em !important;
+  }
 `
 
 export const MceSuccessResponse = styled.div`
@@ -43,20 +76,79 @@ export const MceSuccessResponse = styled.div`
   font-size: 15px !important;
   font-weight: 400 !important;
   background-color: rgba(107, 5, 5, 0) !important;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 14px !important;
+    padding: 8px 8px !important;
+    margin-bottom: 0.8em !important;
+  }
 `
 
 export const MceEmbeddedSubscribe = styled.div`
   position: absolute;
   top: 0;
   right: 0;
+  display: flex;
+  align-items: center;
 `
-
 export const McInputWrapper = styled.div`
   position: relative;
+  width: 30vw;
+
+  @media only screen and (max-width: ${styleVars.mdUp}) {
+    width: 50vw;
+  }
+
+  @media only screen and (max-width: ${styleVars.smUp}) {
+    width: 60vw;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  @media only screen and (max-width: ${styleVars.xsUp}) {
+    width: 60vw;
+    padding: 0 5px;
+  }
 `
 
-const SignUpForm = () => (
-  <div id="mc_embed_signup">
+const StyledInput = styled.input`
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  background-color: black;
+  
+  ::placeholder {
+    color: white;
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: #000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  @media only screen and (max-width: ${styleVars.smUp}) {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  @media only screen and (max-width: ${styleVars.xsUp}) {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+`;
+
+const SignUpForm = () => {
+  const isMobile = useIsMobile(1024)
+
+  const desktopPlaceholder = "Your email here. No spam, we promise!"
+  const mobilePlaceholder = "Your email here."
+
+  return (
+    <div id="mc_embed_signup">
     <form
       action="https://mchacks.us21.list-manage.com/subscribe/post?u=5369e4c4f19f741106977ddfa&amp;id=cb6c20e487&amp;f_id=00b9e9e6f0"
       method="post"
@@ -69,19 +161,22 @@ const SignUpForm = () => (
     >
       <div id="mc_embed_signup_scroll">
         <div className="mc-field-group">
-          <div className="mc-input-wrapper">
-            <input
-              id="mce-EMAIL"
-              type="email"
-              name="EMAIL"
-              className="required email"
-              placeholder="your email here"
-            />
-            <MceEmbeddedSubscribe>
-              <ArrowButton>
-                <FontAwesomeIcon icon={faArrowRight} />
-              </ArrowButton>
-            </MceEmbeddedSubscribe>
+          <div>
+            <McInputWrapper className="mc-input-wrapper">
+              <StyledInput
+                id="mce-EMAIL"
+                type="email"
+                name="EMAIL"
+                className="required-email"
+                placeholder={isMobile ? mobilePlaceholder : desktopPlaceholder}
+                required
+              />
+              <MceEmbeddedSubscribe>
+                <ArrowButton type="submit">
+                  <img src={CustomArrowIcon} alt="Arrow Icon"/>
+                </ArrowButton>
+              </MceEmbeddedSubscribe>
+            </McInputWrapper>
           </div>
 
           <div
@@ -113,6 +208,7 @@ const SignUpForm = () => (
       </div>
     </form>
   </div>
-)
+  )
+};
 
 export default SignUpForm
