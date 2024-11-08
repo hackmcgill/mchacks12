@@ -45,6 +45,38 @@ export const Container = styled.nav`
   .home-link:hover {
     color: white;
   }
+
+  @media only screen and (max-width: ${styleVars.mdUp}) {
+    .background {
+      margin-top: 10vh;
+      width: 100%;
+      height: 10vh;
+    }
+  }
+
+  @media only screen and (max-width: ${styleVars.smUp}) {
+    .background {
+      margin-top: 10vh;
+      width: 100%;
+      height: 10vh;
+    }
+  }
+
+  @media only screen and (max-width: ${styleVars.lgUp}) {
+    .background {
+      margin-top: 10vh;
+      width: 100%;
+      height: 10vh;
+    }
+  }
+
+  @media only screen and (max-width: ${styleVars.xsUp}) {
+    .background {
+      margin-top: 10vh;
+      width: 100%;
+      height: 10vh;
+    }
+  }
 `
 
 export default Container
