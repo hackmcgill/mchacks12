@@ -2,7 +2,7 @@ import styled from "styled-components"
 import * as styleVars from "../variable"
 
 export const HeroStyles = styled.section`
-  padding-bottom: 520px;
+  padding-top: 50px;
   background: #8CDCFE;
 
   .hero__images-container {
@@ -45,10 +45,49 @@ export const HeroStyles = styled.section`
     z-index: 1;
     text-align: center;
     width: 100%;
-    padding-top: 260px;
+    padding-top: 240px;
     justify-content: center;
     align-items: center;
     gap: 30px;
+
+    .hero__clouds {
+      display: flex;
+      justify-content: space-around;
+      gap: 40vw;
+      width: 100%;
+      margin-bottom: -50px;
+
+      .hero__cloud1, .hero__cloud4 {
+        width: 6vw;
+      }
+    }
+
+    .grid__clouds {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: -20px;
+
+      .hero__cloud2, .hero__cloud3 {
+        width: 5vw;
+      }
+    }
+
+    .grid__icons {
+        display:flex;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+
+        .hero__buttons {
+          width: 7vw;
+        }
+
+        .hero__joystick {
+          width: 4vw;
+        }
+    }
+
   }
 
   .hero__grid {
@@ -123,18 +162,35 @@ export const HeroStyles = styled.section`
   .hero__heading {
     display: none; /* Leave in h1 for SEO */
   }
+  
+  .hero__grass {
+    width: 100vw;
+  }
+  
+  .hero__grass_image {
+    width: 100%;
+    margin-bottom: -10px;
+  }
 
   @media only screen and (max-width: ${styleVars.mdUp}) {
-    padding-bottom: 350px;
+    padding-top: 30px;
 
     .hero__wrapper {
       padding-top: 200px;
       gap: 20px;
+
+      .grid__clouds {
+        display: none;
+      }
+
+      .hero__clouds {
+        display: none;
+      }
     }
 
     .hero__grid {
+      margin: 10px;
       max-width: 720px;
-      margin: auto;
 
       .hero__grid__text {
         margin-bottom: 6px;
@@ -168,14 +224,23 @@ export const HeroStyles = styled.section`
     }
   }
   @media only screen and (max-width: ${styleVars.smUp}) {
-    padding-bottom: 300px;
-
+    padding-top: 10px;
     .hero__wrapper {
-      padding-top: 150px;
+      padding-top: 130px;
       gap: 15px;
+
+      .grid__clouds {
+        display: none;
+      }
+
+      .hero__clouds {
+        display:none;
+      }
     }
 
+
     .hero__grid {
+      margin: 10px;
       flex-direction: column;
       align-items: center;
       gap: 30px;
@@ -227,18 +292,34 @@ export const HeroStyles = styled.section`
       font-size: 14px;
       padding: 8px 16px;
     }
+
+    .grid__clouds {
+      display: none;
+    }
+
+    .hero__clouds {
+      display:none;
+    }
   }
 
   @media only screen and (max-width: ${styleVars.xsUp}) {
-    padding-bottom: 200px;
-
+    padding-top: 10px;
     .hero__wrapper {
       padding-top: 100px;
       gap: 10px;
+
+      .grid__clouds {
+        display: none;
+      }
+
+      .hero__clouds {
+        display:none;
+      }
     }
 
     .hero__grid {
       max-width: 90%;
+      margin: 10px;
 
       .hero__grid__subheading {
         font-size: 16px;
@@ -262,19 +343,6 @@ export const HeroStyles = styled.section`
     button {
       font-size: 12px;
       padding: 6px 12px;
-    }
-  }
-
-  @media only screen and (max-width: ${styleVars.smUp}) {
-    .hero__grid {
-      .hero__grid__location,
-      .hero__grid__date {
-        text-align: center;
-      }
-    }
-
-    .hero__images-container {
-      margin-bottom: 20px;
     }
   }
 `
