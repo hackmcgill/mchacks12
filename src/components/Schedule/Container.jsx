@@ -100,8 +100,9 @@ export const Container = styled.section`
         flex: 1;
 
         .name {
-          font-size: 1.5em;
+          font-size: 1.1em;
           margin-top: -4px;
+          word-spacing: 3px;
 
           small {
             font-size: 0.8em;
@@ -160,6 +161,7 @@ export const Container = styled.section`
       }
       .activityType {
         color: ${styleVars.darkYellow};
+        word-spacing: 2px;
       }
     }
 
@@ -169,6 +171,7 @@ export const Container = styled.section`
       }
       .activityType {
         color: ${styleVars.yellow};
+        word-spacing: 2px;
       }
     }
 
@@ -182,6 +185,7 @@ export const Container = styled.section`
       }
       .activityType {
         color: ${styleVars.darkSecondaryBlue};
+        word-spacing: 2px;
       }
     }
   }
