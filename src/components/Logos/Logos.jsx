@@ -27,10 +27,9 @@ const Logos = ({ scrollRef }) => {
   const TIERS = ["Tera", "Giga", "Mega", "Kilo", "Byte", "In Kind"]
   return (
     <Container ref={scrollRef}>
-      <div>LOGOS HERE</div>
       {edges.length > 0 ? (
         <Content>
-          <h1>Past Sponsors</h1>
+          <h1 className="past-sponsors">Past Sponsors</h1>
           {TIERS.map((tier) => (
             <Tier key={tier}>
               {edges

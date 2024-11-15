@@ -10,6 +10,7 @@ export const Content = styled.section`
     color: ${styleVars.faqBlue1};
     margin-top: 0;
     margin-bottom: 6rem;
+    font-family: "ArcadeClassic", sans-serif;
   }
 `
 

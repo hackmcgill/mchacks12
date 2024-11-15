@@ -71,7 +71,6 @@ const Schedule = ({ visible }) => {
             <Event key={index} {...event} />
           ))}
       </div>
-      <div className="coming-soon">Coming Soon!</div>
     </Container>
   )
 }
