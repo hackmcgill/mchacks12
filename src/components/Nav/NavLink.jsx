@@ -2,7 +2,7 @@ import styled from "styled-components"
 import * as styleVars from "../variable"
 
 export const NavLink = styled.a`
-  font-family: 'ArcadeClassic';
+  font-family: 'ArcadeClassic', sans-serif;
   font-size: 24px;
   display: flex;
   cursor: pointer;

@@ -14,7 +14,7 @@ import CarouselSpeaker from "../components/Carousel/CarouselSpeaker"
 import CarouselMentorAndJudges from "../components/Carousel/CarouselMentorAndJudges"
 import CarouselRecruiter from "../components/Carousel/CarouselRecruiter"
 
-const scrollTo = (ref, offset = 100) => {
+const scrollTo = (ref, offset = 50) => {
   if (ref.current) {
     window.scrollTo({
       top: ref.current.offsetTop - offset,
@@ -46,9 +46,9 @@ const IndexPage = () => {
       <EventInfo />
       <Sponsor scrollRef={sponsorRef} />
       <FAQ scrollRef={faqRef} />
-      <CarouselSpeaker />
+      {/*<CarouselSpeaker />
       <CarouselRecruiter />
-      <CarouselMentorAndJudges />
+      <CarouselMentorAndJudges />*/}
       <Logos />
       <Footer />
     </div>

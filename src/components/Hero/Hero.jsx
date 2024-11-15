@@ -1,5 +1,4 @@
 import React from "react"
-import HeroShapesImg from "../../assets/images/designs/hero-shapes.svg"
 import Martlet from "../../assets/images/designs/mchacks13-hero-martlet.svg"
 import Button from "./Button"
 import HeroStyles from "./HeroStyles"

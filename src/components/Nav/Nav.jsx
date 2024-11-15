@@ -8,6 +8,7 @@ import IconContainer from "./IconContainer"
 import Links from "./Links"
 import MobileMenu from "./MobileMenu"
 import NavLink from "./NavLink"
+import Background from "./Background"
 
 import SocialMediaBar from "../SocialMedia/SocialMediaBar"
 
@@ -22,9 +23,15 @@ const Nav = ({
 
 }) => {
   const [hasBorder, setHasBorder] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const handleScroll = () => {
     setHasBorder(window.pageYOffset > 20)
+    setScrolled(window.pageYOffset > 500)
   }
+
+  useEffect(() => {
+    console.log(scrolled)
+  }, [scrolled])
 
   useEffect(() => {
     handleScroll()
@@ -86,14 +93,16 @@ const Nav = ({
             <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white">
               <img
                 src={MLHBanner}
-                alt="Major League Hacking 2024 Hackathon Season"
+                alt="Major League Hacking 2025 Hackathon Season"
               />
             </a>
           </div>
         </Links>
       </div>
-      <div className="background"></div>
-      <Menu isOpen={true} styles={MobileMenu}>
+      <Background $scrolled={scrolled}>
+        <div className="background"></div>
+      </Background>
+      <Menu isOpen={true} styles={MobileMenu} $hasBorder={hasBorder}>
         {NavItems(true)}
       </Menu>
     </Container>
