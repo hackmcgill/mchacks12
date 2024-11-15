@@ -7,7 +7,7 @@ import Text from "./Text"
 import Button from "./Button"
 
 import ColorBlur4 from "../../assets/images/designs/blur-4.png"
-import SponsorImg from "../../assets/images/designs/sponsor.svg"
+import SponsorImg from "../../assets/images/designs/mchacks12-sponsor-image.svg"
 
 const mailTo = () => {
   window.location = "mailto:sponsorship@mchacks.ca?Subject=Hello!"

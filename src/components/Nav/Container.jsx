@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import headerImage from '../../assets/images/designs/mchacks12-header.svg';
 import * as styleVars from "../variable"
 
 export const Container = styled.nav`
@@ -21,20 +20,10 @@ export const Container = styled.nav`
   &.has-border,
   &.dark-background {
     background-color: #3BA4DF !important;
-    box-shadow: 0 2px 6px 3px !important;
   }
 
-  .background {
-    margin-top: 16vh;
-    width: 100%;
-    height: 20vh;
-    background-image: url(${headerImage});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
   .home-link {
-    font-family: 'ArcadeClassic';
+    font-family: 'ArcadeClassic', sans-serif;
     font-size: 24px;
     cursor: pointer;
     color: ${styleVars.hackRed};
@@ -44,38 +33,6 @@ export const Container = styled.nav`
 
   .home-link:hover {
     color: white;
-  }
-
-  @media only screen and (max-width: ${styleVars.mdUp}) {
-    .background {
-      margin-top: 10vh;
-      width: 100%;
-      height: 10vh;
-    }
-  }
-
-  @media only screen and (max-width: ${styleVars.smUp}) {
-    .background {
-      margin-top: 10vh;
-      width: 100%;
-      height: 10vh;
-    }
-  }
-
-  @media only screen and (max-width: ${styleVars.lgUp}) {
-    .background {
-      margin-top: 10vh;
-      width: 100%;
-      height: 10vh;
-    }
-  }
-
-  @media only screen and (max-width: ${styleVars.xsUp}) {
-    .background {
-      margin-top: 10vh;
-      width: 100%;
-      height: 10vh;
-    }
   }
 `
 

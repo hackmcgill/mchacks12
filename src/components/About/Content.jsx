@@ -9,13 +9,6 @@ export const Content = styled.div`
   margin: auto;
   gap: 40px;
 
-  .color-blur-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-
   @media only screen and (max-width: ${styleVars.mdUp}) {
     flex-direction: column;
     justify-content: center;

@@ -93,14 +93,15 @@ export const MceEmbeddedSubscribe = styled.div`
 `
 export const McInputWrapper = styled.div`
   position: relative;
-  width: 30vw;
+  width: 40vw;
+  height: 10vh;
 
   @media only screen and (max-width: ${styleVars.mdUp}) {
-    width: 50vw;
+    width: 40vw;
   }
 
   @media only screen and (max-width: ${styleVars.smUp}) {
-    width: 60vw;
+    width: 55vw;
     justify-content: center;
     padding: 0 10px;
   }
@@ -113,25 +114,21 @@ export const McInputWrapper = styled.div`
 
 const StyledInput = styled.input`
   width: 100%;
+  height: 10vh;
   padding: 10px 15px;
   font-size: 16px;
   border: 2px solid black;
   border-radius: 4px 0 0 4px;
   outline: none;
   background-color: black;
-  
   ::placeholder {
     color: white;
     opacity: 1;
   }
 
-  &:focus {
-    border-color: #000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  }
-
   @media only screen and (max-width: ${styleVars.smUp}) {
-    padding: 8px 12px;
+    width: 0vw;
+    padding: 8px 10px;
     font-size: 14px;
   }
 
