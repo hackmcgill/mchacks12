@@ -61,8 +61,7 @@ const TeraLogo = styled(StyledLogo)`
 const GigaLogo = styled(StyledLogo)`
   a {
     img {
-      max-height: 300px;
-      max-width: 400px;
+      height: 200px;
     }
   }
 `
@@ -70,8 +69,8 @@ const GigaLogo = styled(StyledLogo)`
 const MegaLogo = styled(StyledLogo)`
   a {
     img {
-      max-height: 250px;
-      max-width: 275px;
+      max-height: 300px;
+      max-width: 250px;
     }
   }
 `
@@ -88,7 +87,7 @@ const ByteLogo = styled(StyledLogo)`
   a {
     img {
       max-height: 175px;
-      max-width: 175px;
+      max-width: 150px;
     }
   }
 `
