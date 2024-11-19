@@ -7,6 +7,7 @@ import "./mailchimp.scss"
 
 import CustomArrowIcon from '../../assets/images/designs/mchacks12-arrow.svg'
 import useIsMobile from "../../hooks/useIsMobile"
+import { useMediaQuery } from 'react-responsive';
 
 export const ArrowButton = styled.button`
   background-color: #F13431;
@@ -139,7 +140,7 @@ const StyledInput = styled.input`
 `;
 
 const SignUpForm = () => {
-  const isMobile = useIsMobile(1024)
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   const desktopPlaceholder = "Your email here. No spam, we promise!"
   const mobilePlaceholder = "Your email here."
@@ -165,7 +166,7 @@ const SignUpForm = () => {
                 type="email"
                 name="EMAIL"
                 className="required-email"
-                placeholder={!isMobile ? desktopPlaceholder : mobilePlaceholder}
+                placeholder={isMobile ? mobilePlaceholder : desktopPlaceholder}
                 required
               />
               <MceEmbeddedSubscribe>
