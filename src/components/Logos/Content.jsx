@@ -11,28 +11,6 @@ export const Content = styled.section`
     margin: 0;
     font-family: "ArcadeClassic", sans-serif;
   }
-
-  @media (max-width: 1024px) {
-    h1 {
-      margin: -20vh 0 -10vh 0;
-      font-size: 4rem;
-    }
-  }
-  
-
-  @media (max-width: 768px) {
-    h1 {
-      margin: -20vh 0 -15vh 0;
-      font-size: 4rem;
-    }
-  }
-
-  @media (max-width: 420px) {
-    h1 {
-      margin: 0vh 0 -15vh 0;
-      font-size: 4rem;
-    }
-  }
 `
 
 export default Content

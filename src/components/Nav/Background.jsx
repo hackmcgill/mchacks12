@@ -11,9 +11,9 @@ export const Background = styled.div`
 
     .background {
         position: absolute;
-        margin-top: 3.4vh;
+        top: 11px;
         width: 100%;
-        height: 20vh;
+        height: 200px;
         background-image: url(${headerImage});
         background-repeat: no-repeat;
         background-size: cover;
@@ -23,43 +23,24 @@ export const Background = styled.div`
         z-index: -1;
     }
 
-    @media only screen and (max-width: 1450px) {
-        .background {
-            margin-top: 1.5vh;
-            width: 100%;
-            height: 20vh;
-        }
-    }
-
     @media only screen and (max-width: ${styleVars.lgUp}) {
         .background {
-            margin-top: 5vh;
-            width: 100%;
-            height: 10vh;
-        }
-    }
-
-    @media only screen and (max-width: ${styleVars.mdUp}) {
-        .background {
-            margin-top: 4.8vh;
-            width: 100%;
-            height: 10vh;
+            top: 28px;
+            height: 150px;
         }
     }
 
     @media only screen and (max-width: ${styleVars.smUp}) {
         .background {
-            margin-top: 4.8vh;
-            width: 100%;
-            height: 10vh;
+            top: 45px;
+            height: 100px;
         }
     }
 
     @media only screen and (max-width: ${styleVars.xsUp}) {
         .background {
-            margin-top: 4.8vh;
-            width: 100%;
-            height: 10vh;
+            top: 45px;
+            height: 100px;
         }
     }
 `

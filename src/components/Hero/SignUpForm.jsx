@@ -165,7 +165,7 @@ const SignUpForm = () => {
                 type="email"
                 name="EMAIL"
                 className="required-email"
-                placeholder={isMobile ? mobilePlaceholder : desktopPlaceholder}
+                placeholder={!isMobile ? desktopPlaceholder : mobilePlaceholder}
                 required
               />
               <MceEmbeddedSubscribe>
