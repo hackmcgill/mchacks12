@@ -6,7 +6,6 @@ import * as styleVars from "../variable"
 import "./mailchimp.scss"
 
 import CustomArrowIcon from '../../assets/images/designs/mchacks12-arrow.svg'
-import useIsMobile from "../../hooks/useIsMobile"
 import { useMediaQuery } from 'react-responsive';
 
 export const ArrowButton = styled.button`
@@ -140,7 +139,7 @@ const StyledInput = styled.input`
 `;
 
 const SignUpForm = () => {
-  const isMobile = useMediaQuery({ maxWidth: 1024 });
+  const isMobile = useMediaQuery({ maxWidth: 1025 });
 
   const desktopPlaceholder = "Your email here. No spam, we promise!"
   const mobilePlaceholder = "Your email here."
