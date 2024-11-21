@@ -10,7 +10,7 @@ export const PageLink = styled.a`
 
   &:focus,
   &:hover {
-    color: ${styleVars.hackRed};
+    color: ${styleVars.m12Maroon};
   }
 `
 

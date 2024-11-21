@@ -5,11 +5,11 @@ import * as styleVars from "../variable"
 
 import "./mailchimp.scss"
 
-import CustomArrowIcon from '../../assets/images/designs/mchacks12-arrow.svg'
-import { useMediaQuery } from 'react-responsive';
+import CustomArrowIcon from "../../assets/images/designs/mchacks12-arrow.svg"
+import { useMediaQuery } from "react-responsive"
 
 export const ArrowButton = styled.button`
-  background-color: #F13431;
+  background-color: ${styleVars.m12Red};
   border-radius: 43%;
   border: none;
   transition: all 0.15s ease-in-out;
@@ -17,7 +17,7 @@ export const ArrowButton = styled.button`
   height: 54px;
   margin-left: -8px;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   border: 2px solid black;
 
@@ -27,8 +27,8 @@ export const ArrowButton = styled.button`
 
   img {
     width: 35px;
-    height: 35px; 
-    object-fit: contain; 
+    height: 35px;
+    object-fit: contain;
   }
 
   @media only screen and (max-width: ${styleVars.smUp}) {
@@ -120,7 +120,6 @@ const StyledInput = styled.input`
   border: 2px solid black;
   border-radius: 4px 0 0 4px;
   outline: none;
-  background-color: black;
   ::placeholder {
     color: white;
     opacity: 1;
@@ -136,76 +135,78 @@ const StyledInput = styled.input`
     padding: 6px 10px;
     font-size: 12px;
   }
-`;
+`
 
 const SignUpForm = () => {
-  const isMobile = useMediaQuery({ maxWidth: 1025 });
+  const isMobile = useMediaQuery({ maxWidth: 1025 })
 
   const desktopPlaceholder = "Your email here. No spam, we promise!"
   const mobilePlaceholder = "Your email here."
 
   return (
     <div id="mc_embed_signup">
-    <form
-      action="https://mchacks.us21.list-manage.com/subscribe/post?u=5369e4c4f19f741106977ddfa&amp;id=cb6c20e487&amp;f_id=00b9e9e6f0"
-      method="post"
-      id="mc-embedded-subscribe-form"
-      name="mc-embedded-subscribe-form"
-      className="validate"
-      target="_blank"
-      rel="noopener noreferrer"
-      noValidate
-    >
-      <div id="mc_embed_signup_scroll">
-        <div className="mc-field-group">
-          <div>
-            <McInputWrapper className="mc-input-wrapper">
-              <StyledInput
-                id="mce-EMAIL"
-                type="email"
-                name="EMAIL"
-                className="required-email"
-                placeholder={isMobile ? mobilePlaceholder : desktopPlaceholder}
-                required
-              />
-              <MceEmbeddedSubscribe>
-                <ArrowButton type="submit">
-                  <img src={CustomArrowIcon} alt="Arrow Icon"/>
-                </ArrowButton>
-              </MceEmbeddedSubscribe>
-            </McInputWrapper>
-          </div>
+      <form
+        action="https://mchacks.us21.list-manage.com/subscribe/post?u=5369e4c4f19f741106977ddfa&amp;id=cb6c20e487&amp;f_id=00b9e9e6f0"
+        method="post"
+        id="mc-embedded-subscribe-form"
+        name="mc-embedded-subscribe-form"
+        className="validate"
+        target="_blank"
+        rel="noopener noreferrer"
+        noValidate
+      >
+        <div id="mc_embed_signup_scroll">
+          <div className="mc-field-group">
+            <div>
+              <McInputWrapper className="mc-input-wrapper">
+                <StyledInput
+                  id="mce-EMAIL"
+                  type="email"
+                  name="EMAIL"
+                  className="required-email"
+                  placeholder={
+                    isMobile ? mobilePlaceholder : desktopPlaceholder
+                  }
+                  required
+                />
+                <MceEmbeddedSubscribe>
+                  <ArrowButton type="submit">
+                    <img src={CustomArrowIcon} alt="Arrow Icon" />
+                  </ArrowButton>
+                </MceEmbeddedSubscribe>
+              </McInputWrapper>
+            </div>
 
+            <div
+              className="response"
+              id="mce-error-response"
+              css={{ display: "none" }}
+            ></div>
+            <div
+              className="response"
+              id="mce-success-response"
+              css={{ display: "none" }}
+            ></div>
+          </div>
           <div
-            className="response"
-            id="mce-error-response"
-            css={{ display: "none" }}
-          ></div>
-          <div
-            className="response"
-            id="mce-success-response"
-            css={{ display: "none" }}
-          ></div>
+            css={{
+              position: "absolute",
+              left: "-5000px",
+            }}
+            aria-hidden="true"
+          >
+            <input
+              type="text"
+              name="b_daca896c9229eac78a0cc3810_a5a34f6561"
+              tabIndex="-1"
+              value=""
+              readOnly
+            />
+          </div>
         </div>
-        <div
-          css={{
-            position: "absolute",
-            left: "-5000px",
-          }}
-          aria-hidden="true"
-        >
-          <input
-            type="text"
-            name="b_daca896c9229eac78a0cc3810_a5a34f6561"
-            tabIndex="-1"
-            value=""
-            readOnly
-          />
-        </div>
-      </div>
-    </form>
-  </div>
+      </form>
+    </div>
   )
-};
+}
 
 export default SignUpForm
