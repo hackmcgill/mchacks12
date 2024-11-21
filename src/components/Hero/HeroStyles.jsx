@@ -155,7 +155,7 @@ export const HeroStyles = styled.section`
       margin: 0;
       font-weight: 400;
       text-align: center;
-      color: ${styleVars.hackRed};
+      color: ${styleVars.m12Maroon};
     }
   }
 

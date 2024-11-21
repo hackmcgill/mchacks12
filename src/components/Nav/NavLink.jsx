@@ -6,7 +6,7 @@ export const NavLink = styled.a`
   font-size: 24px;
   display: flex;
   cursor: pointer;
-  color: ${styleVars.hackRed};
+  color: ${styleVars.m12Maroon};
   text-decoration: none;
   transition: color 0.3s ease;
 
@@ -15,7 +15,7 @@ export const NavLink = styled.a`
   &:hover,
   &:active {
     background: transparent;
-    color: white;
+    color: ${styleVars.m12White};
   }
 
   .home-link {
@@ -23,7 +23,7 @@ export const NavLink = styled.a`
   font-size: 24px;
   display: flex;
   cursor: pointer;
-  color: ${styleVars.hackRed};
+  color: ${styleVars.m12Maroon};
   text-decoration: none;
   transition: color 0.3s ease;}
 }

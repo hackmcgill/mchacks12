@@ -2,13 +2,12 @@ import styled from "styled-components"
 import * as styleVars from "../variable"
 
 export const Button = styled.button`
-  font-family: Brown, sans-serif;
+  font-family: "Press Start 2P";
   font-weight: 400;
-  font-size: 14px;
+  font-size: 17px;
   text-transform: none;
-  background-color: ${styleVars.hackGold};
-  color: ${styleVars.primary};
-  border-radius: 3.75em;
+  background-color: ${styleVars.m12DarkPurple};
+  color: ${styleVars.m12White};
   border: none;
   transition: all 0.15s ease-in-out;
   margin-top: 16px;

@@ -7,7 +7,7 @@ export const Button = styled.button`
   font-size: 18px;
   text-transform: none;
   color: ${styleVars.hackWhite};
-  background-color: ${styleVars.hackBlack};
+  background-color: ${styleVars.m12DarkestGrey};
   border-radius: 36px;
   border: none;
   transition: all 0.3s ease;

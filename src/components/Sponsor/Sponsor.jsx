@@ -21,7 +21,7 @@ const Sponsor = ({ scrollRef }) => (
         <Image src={SponsorImg} />
       </div>
       <Text>
-        <h2>Interested in sponsoring McHacks?</h2>
+        <h2>Sponsoring McHacks</h2>
         <p>
           This winter, the best and brightest students from around the world
           will connect for 24 hours to shake the world of technology. We want

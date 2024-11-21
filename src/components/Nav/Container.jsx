@@ -19,14 +19,14 @@ export const Container = styled.nav`
 
   &.has-border,
   &.dark-background {
-    background-color: #3BA4DF !important;
+    background-color: #3ba4df !important;
   }
 
   .home-link {
-    font-family: 'ArcadeClassic', sans-serif;
+    font-family: "ArcadeClassic", sans-serif;
     font-size: 24px;
     cursor: pointer;
-    color: ${styleVars.hackRed};
+    color: ${styleVars.m12Red};
     text-decoration: none;
     transition: color 0.3s ease;
   }

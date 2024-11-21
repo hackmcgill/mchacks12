@@ -12,7 +12,7 @@ const About = ({ scrollRef }) => (
   <Container ref={scrollRef} style={{}}>
     <Content>
       <Text>
-        <h2>Dream. Develop. Deploy!</h2>
+        <h2>Dream.develop.deploy!</h2>
         <p>
           For 24 hours, over 500 of the boldest young minds across the globe
           come together for a jam-packed online weekend of beginner-to-pro
