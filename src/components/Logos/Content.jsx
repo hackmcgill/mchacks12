@@ -10,7 +10,7 @@ export const Content = styled.section`
   h1 {
     font-size: 5rem;
     text-align: center;
-    color: ${styleVars.faqBlue1};
+    color: ${styleVars.hackBlack};
     margin: 0;
     margin-bottom: 5rem;
     font-family: "ArcadeClassic", sans-serif;
