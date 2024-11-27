@@ -2,6 +2,7 @@ $mailchimp-color-main: #FCB427;
 $mailchimp-color-light: #a1908e;
 $mailchimp-color-grey: #797979;
 $mailchimp-color-white: #fff;
+$mailchimp-color-black: #1F2025;
 
 #mc_embed_signup {
   width: 90%;
@@ -15,7 +16,7 @@ $mailchimp-color-white: #fff;
   color: $mailchimp-color-grey;
   outline: 0;
   width: 100%;
-  background-color: black;
+  background-color: $mailchimp-color-black;
   border-radius: 30px;
   text-align: left;
   display: inline-block;
