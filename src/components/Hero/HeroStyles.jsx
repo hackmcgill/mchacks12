@@ -3,7 +3,7 @@ import * as styleVars from "../variable"
 
 export const HeroStyles = styled.section`
   padding-top: 50px;
-  background: #8CDCFE;
+  background: #8cdcfe;
 
   .hero__images-container {
     position: relative;
@@ -21,7 +21,7 @@ export const HeroStyles = styled.section`
       position: absolute;
       top: 5%;
       left: 5%;
-      width: 10%; 
+      width: 10%;
       height: auto;
       transform: translate(-90%, -85%);
 
@@ -57,7 +57,8 @@ export const HeroStyles = styled.section`
       width: 100%;
       margin-bottom: -50px;
 
-      .hero__cloud1, .hero__cloud4 {
+      .hero__cloud1,
+      .hero__cloud4 {
         width: 6vw;
       }
     }
@@ -68,26 +69,26 @@ export const HeroStyles = styled.section`
       width: 100%;
       margin-top: -20px;
 
-      .hero__cloud2, .hero__cloud3 {
+      .hero__cloud2,
+      .hero__cloud3 {
         width: 5vw;
       }
     }
 
     .grid__icons {
-        display:flex;
-        gap: 100px;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      gap: 100px;
+      justify-content: center;
+      align-items: center;
 
-        .hero__buttons {
-          width: 7vw;
-        }
+      .hero__buttons {
+        width: 7vw;
+      }
 
-        .hero__joystick {
-          width: 4vw;
-        }
+      .hero__joystick {
+        width: 4vw;
+      }
     }
-
   }
 
   .hero__grid {
@@ -162,11 +163,11 @@ export const HeroStyles = styled.section`
   .hero__heading {
     display: none; /* Leave in h1 for SEO */
   }
-  
+
   .hero__grass {
     width: 100vw;
   }
-  
+
   .hero__grass_image {
     width: 100%;
     margin-bottom: -10px;
@@ -234,10 +235,9 @@ export const HeroStyles = styled.section`
       }
 
       .hero__clouds {
-        display:none;
+        display: none;
       }
     }
-
 
     .hero__grid {
       margin: 10px;
@@ -298,7 +298,7 @@ export const HeroStyles = styled.section`
     }
 
     .hero__clouds {
-      display:none;
+      display: none;
     }
   }
 
@@ -313,7 +313,7 @@ export const HeroStyles = styled.section`
       }
 
       .hero__clouds {
-        display:none;
+        display: none;
       }
     }
 

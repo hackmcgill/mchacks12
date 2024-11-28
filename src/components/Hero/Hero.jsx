@@ -22,19 +22,10 @@ const apply = () => {
 
 const Hero = () => (
   <HeroStyles>
-
     <div className="hero__wrapper">
       <div className="hero__clouds">
-        <img 
-          className="hero__cloud1"
-          src={Cloud1}
-          alt="Cloud1"
-        />
-        <img 
-          className="hero__cloud4"
-          src={Cloud4}
-          alt="Cloud4"
-        />
+        <img className="hero__cloud1" src={Cloud1} alt="Cloud1" />
+        <img className="hero__cloud4" src={Cloud4} alt="Cloud4" />
       </div>
       <h1 className="hero__heading">McHacks 12</h1>
       <div className="hero__images-container">
@@ -43,11 +34,7 @@ const Hero = () => (
           src={McHacksImg}
           alt="McHacks 12"
         />
-        <img
-          className="hero__martlet"
-          src={Martlet}
-          alt="Martlet Icon"
-        />
+        <img className="hero__martlet" src={Martlet} alt="Martlet Icon" />
       </div>
       <div className="hero__grid">
         <div className="hero__grid__location">
@@ -58,42 +45,22 @@ const Hero = () => (
         </div>
       </div>
       <div className="grid__icons">
-          <img
-            className="hero__joystick"
-            src={Joystick}
-            alt="Joystick"
-          />
-          <img
-            className="hero__buttons"
-            src={Buttons}
-            alt="Buttons"
-          />
+        <img className="hero__joystick" src={Joystick} alt="Joystick" />
+        <img className="hero__buttons" src={Buttons} alt="Buttons" />
       </div>
       <div className="grid__clouds">
-        <img 
-          className="hero__cloud2"
-          src={Cloud2}
-          alt="Cloud2"
-        />
-        <img 
-          className="hero__cloud3"
-          src={Cloud3}
-          alt="Cloud3"
-        />
+        <img className="hero__cloud2" src={Cloud2} alt="Cloud2" />
+        <img className="hero__cloud3" src={Cloud3} alt="Cloud3" />
       </div>
       <Button disabled={false} onClick={apply}>
         Apply Now →
       </Button>
       <div className="hero__grid__signup">
-          <SignUpForm className="hero__signup"/>
+        <SignUpForm className="hero__signup" />
       </div>
       {/* <Button onClick={live}>Live Site →</Button> */}
       <div className="hero__grass">
-        <img
-          className="hero__grass_image"
-          src={Grass}
-          alt="Grass"
-        />
+        <img className="hero__grass_image" src={Grass} alt="Grass" />
       </div>
     </div>
   </HeroStyles>

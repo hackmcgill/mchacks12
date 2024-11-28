@@ -4,7 +4,6 @@ import * as styleVars from "../variable"
 const Container = styled.section`
   position: relative;
   height: 1360px;
-  padding: 0 14px 0 14px;
 
   .QuestionBox {
     border: 1px solid ${styleVars.hackBlack};
@@ -19,7 +18,7 @@ const Container = styled.section`
     background-color: white;
 
     a {
-      color: ${styleVars.faqBlue1};
+      color: ${styleVars.m12DarkestGrey};
     }
 
     .questionRow {
@@ -42,11 +41,11 @@ const Container = styled.section`
     }
 
     .answer {
-      color: ${styleVars.faqBlack};
+      font-family: "Space Mono";
+      color: ${styleVars.m12DarkestGrey};
       margin-top: 10px;
       font-size: 0.9em;
       display: none;
-      font-family: "Hind Siliguri", sans-serif;
     }
 
     &.expanded {
@@ -62,7 +61,7 @@ const Container = styled.section`
       }
 
       .question {
-        color: ${styleVars.faqBlue3};
+        color: ${styleVars.m12DarkestTeal};
       }
   }
 
