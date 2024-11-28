@@ -5,7 +5,7 @@ import BgGridSquare from "../../assets/images/designs/mchacks12-grid.svg"
 
 const Container = styled.section`
   position: relative;
-  height: 1750px;
+  height: 1900px;
 
   background-color: ${styleVars.m12DarkestTeal};
 
@@ -14,7 +14,9 @@ const Container = styled.section`
   linear-gradient(
     to bottom, 
     rgba(26, 112, 118, 1) 0%, 
-    rgba(0, 0, 0, 0) 10%       
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(233, 240, 244, 1) 100%
   );
 
   background-size: cover;
@@ -22,9 +24,14 @@ const Container = styled.section`
   background-repeat: no-repeat;
 
   .heartbar {
+    width: 20em;
     position: absolute;
     top: 16%;
     right: 5%;
+
+    @media only screen and (max-width: ${styleVars.mdUp}) {
+      display: none;
+    }
   }
 
   .QuestionBox {
