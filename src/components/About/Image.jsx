@@ -8,5 +8,4 @@ export const Image = styled.img`
     display: none;
   }
 `
-
 export default Image

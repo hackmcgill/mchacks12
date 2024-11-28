@@ -4,12 +4,13 @@ import Container from "./Container"
 import QuestionGroup from "./QuestionGroup"
 import Question from "./Question"
 import WindowStyles from "./WindowStyles"
+import { TopTransition, TransitionToFAQ } from "./Transitions"
 
 const FAQ = ({ scrollRef }) => (
   <Container ref={scrollRef}>
     <WindowStyles>
       <div className="content">
-        <h2>Any questions?</h2>
+        <h2>Any Questions?</h2>
         <div className="questions">
           <QuestionGroup>
             <Question question="What is a hackathon?">
