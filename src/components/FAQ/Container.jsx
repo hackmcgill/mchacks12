@@ -16,7 +16,7 @@ const Container = styled.section`
     rgba(26, 112, 118, 1) 0%, 
     rgba(0, 0, 0, 0) 10%,
     rgba(0, 0, 0, 0) 90%,
-    rgba(233, 240, 244, 1) 100%
+    rgba(233, 240, 244, 1) 99%
   );
 
   background-size: cover;
