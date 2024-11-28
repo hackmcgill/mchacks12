@@ -66,8 +66,5 @@ export const Content = styled.div`
 
   @media only screen and (max-width: ${styleVars.smUp}) {
     padding: 0;
-    .color-blur-3 {
-      width: 70%;
-    }
   }
 `
