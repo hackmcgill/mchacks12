@@ -8,11 +8,10 @@ export const Content = styled.section`
   gap: 10px;
 
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
     text-align: center;
     color: ${styleVars.m12DarkestTeal};
-    margin: 5rem 0;
-    margin-bottom: 5rem;
+    margin: 7rem 0 2rem 0;
     font-family: "ArcadeClassic", sans-serif;
   }
 `

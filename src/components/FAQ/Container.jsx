@@ -16,12 +16,16 @@ const Container = styled.section`
     rgba(26, 112, 118, 1) 0%, 
     rgba(0, 0, 0, 0) 10%,
     rgba(0, 0, 0, 0) 90%,
-    rgba(233, 240, 244, 1) 100%
+    rgba(248, 248, 248, 1) 99%
   );
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 1000px) {
+    height: 2100px;
+  }
 
   .heartbar {
     width: 20em;
@@ -29,7 +33,7 @@ const Container = styled.section`
     top: 16%;
     right: 5%;
 
-    @media only screen and (max-width: ${styleVars.mdUp}) {
+    @media only screen and (max-width: 1000px) {
       display: none;
     }
   }
