@@ -40,8 +40,8 @@ export default styled.div`
   }
 
   .bubble5 {
-  top: 50%;
-    right: 10%;
+    top: 50%;
+    right: 3%;
   }
 
   @media only screen and (max-width: ${styleVars.mdUp}) {
