@@ -36,9 +36,9 @@ const IndexPage = () => {
     <div>
       <SEO />
       <Nav
-        scrollToAbout={() => scrollTo(aboutRef)}
+        scrollToAbout={() => scrollTo(aboutRef, -200)}
         scrollToSponsor={() => scrollTo(sponsorRef, -150)}
-        scrollToFaq={() => scrollTo(faqRef, 0)}
+        scrollToFaq={() => scrollTo(faqRef, -350)}
         darkBackground={true}
       />
       <Hero />
