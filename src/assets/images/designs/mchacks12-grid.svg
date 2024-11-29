@@ -5,7 +5,7 @@
 <linearGradient id="paint0_linear_107_2" x1="731.499" y1="-555.521" x2="731.5" y2="1978.52" gradientUnits="userSpaceOnUse">
 <stop offset="0.225" stop-color="#1A7076"/>
 <stop offset="0.575" stop-color="#E9F0F4" stop-opacity="0.3"/>
-<stop offset="0.8" stop-color="#E9F0F4" stop-opacity="0.8"/>
+<stop offset="0.9999" stop-color="#E9F0F4" stop-opacity="1"/>
 </linearGradient>
 <radialGradient id="paint1_diamond_107_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(731.5 634.09) rotate(90) scale(786.91 1314.84)">
 <stop offset="0.52" stop-color="#23435B"/>
