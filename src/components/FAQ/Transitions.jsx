@@ -6,15 +6,20 @@ import TopTransitionBoxes from "../../assets/images/designs/faq-top-transition.s
 import SideBoxes from "../../assets/images/designs/faq-side-boxes.svg"
 import BottomTransitionBoxes from "../../assets/images/designs/faq-bottom-transition.svg"
 import SponsorTransitionBoxes from "../../assets/images/designs/sponsor-transition.svg"
-import BgGridSquare from "../../assets/images/designs/faq-grid-square.svg"
+import BgGridSquare from "../../assets/images/designs/mchacks12-grid.svg"
 
 const TransitionToFAQ = styled.div`
   position: relative;
   vertical-align: bottom;
-  background-repeat: repeat-x;
   height: 279px;
-  background-color: ${styleVars.darkSecondaryBlue};
-  background-image: url(${BoxGradientImg});
+  background: linear-gradient(
+    ${styleVars.m12DarkTeal},
+    ${styleVars.m12DarkestTeal}
+  );
+  background-image: url(${BgGridSquare});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `
 const TopTransition = styled.div`
   height: 181px;

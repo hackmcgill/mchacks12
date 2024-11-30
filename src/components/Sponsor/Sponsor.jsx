@@ -6,8 +6,8 @@ import Image from "./Image"
 import Text from "./Text"
 import Button from "./Button"
 
-import ColorBlur4 from "../../assets/images/designs/blur-4.png"
-import SponsorImg from "../../assets/images/designs/sponsor.svg"
+import SponsorImg from "../../assets/images/designs/mchacks12-sponsor-image.svg"
+import Bubble from "../../assets/images/designs/mchacks12-bubble.svg"
 
 const mailTo = () => {
   window.location = "mailto:sponsorship@mchacks.ca?Subject=Hello!"
@@ -16,12 +16,18 @@ const mailTo = () => {
 const Sponsor = ({ scrollRef }) => (
   <Container ref={scrollRef}>
     <Content>
-      <img className="color-blur-4" src={ColorBlur4} alt="" />
+      <div className="bubbles">
+        <img className="bubble-md bubble1" src={Bubble} alt="bubble"></img>
+        <img className="bubble-sm bubble2" src={Bubble} alt="bubble"></img>
+        <img className="bubble-sm bubble3" src={Bubble} alt="bubble"></img>
+        <img className="bubble-md bubble4" src={Bubble} alt="bubble"></img>
+        <img className="bubble-sm bubble5" src={Bubble} alt="bubble"></img>
+      </div>
       <div>
         <Image src={SponsorImg} />
       </div>
       <Text>
-        <h2>Interested in sponsoring McHacks?</h2>
+        <h2>Sponsoring McHacks</h2>
         <p>
           This winter, the best and brightest students from around the world
           will connect for 24 hours to shake the world of technology. We want

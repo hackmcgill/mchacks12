@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 export const Content = styled.div`
+  font-family: 'ArcadeClassic';
   display: flex;
   justify-content: space-between;
   max-width: 780px;

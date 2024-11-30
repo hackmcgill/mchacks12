@@ -21,7 +21,7 @@ const LivePage = () => {
       <LiveNav switchPage={setActivePage} activePage={activePage} />
       <Info visible={activePage === "info"} />
       <Schedule visible={activePage === "schedule"} />
-      <Resources visible={activePage === "resources"} />
+      {/*<Resources visible={activePage === "resources"} />*/}
     </div>
   )
 }

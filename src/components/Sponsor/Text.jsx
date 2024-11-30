@@ -9,14 +9,16 @@ export const Text = styled.div`
   padding: 60px;
 
   h2 {
-    color: ${styleVars.primary};
-    font-size: 36px;
-    font-weight: bold;
+    font-family: "Press Start 2P";
+    color: ${styleVars.m12White};
+    font-size: 24px;
+    font-weight: normal;
     margin-top: 0;
   }
 
   p {
-    color: ${styleVars.primary};
+    font-family: "Space Mono";
+    color: ${styleVars.m12White};
     margin-top: 0;
   }
 

@@ -2,12 +2,14 @@ import styled from "styled-components"
 import * as styleVars from "../variable"
 
 export const Links = styled.div`
-  padding: 1.2rem 0;
+  display: flex;
   align-items: center;
   position: fixed;
-  top: 16px;
-  left: calc(90px + 3.8vw);
-  display: flex;
+  padding: 1rem 0;
+  top: 14px;
+  left: calc(40px);
+  gap: 2.5vw;
+  height: 100%px;
 
   .Nav__socials {
     position: fixed;

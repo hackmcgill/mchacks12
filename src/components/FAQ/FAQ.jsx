@@ -4,12 +4,14 @@ import Container from "./Container"
 import QuestionGroup from "./QuestionGroup"
 import Question from "./Question"
 import WindowStyles from "./WindowStyles"
+import HeartBar from "../../assets/images/designs/mchacks12-heartbar.svg"
 
 const FAQ = ({ scrollRef }) => (
   <Container ref={scrollRef}>
+    <img className="heartbar" src={HeartBar} alt="heart bar"></img>
     <WindowStyles>
       <div className="content">
-        <h2>Any questions?</h2>
+        <h2>Any Questions?</h2>
         <div className="questions">
           <QuestionGroup>
             <Question question="What is a hackathon?">
@@ -18,8 +20,8 @@ const FAQ = ({ scrollRef }) => (
             </Question>
 
             <Question question="When is McHacks?">
-              This year, we'll be running McHacks for 24 hours! It will be on the
-              weekend of January 25-26.
+              This year, we'll be running McHacks for 24 hours! It will be on
+              the weekend of January 25-26.
             </Question>
 
             <Question question="How can I participate in McHacks?">

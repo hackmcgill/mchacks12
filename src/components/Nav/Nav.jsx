@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from "react"
 
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { slide as Menu } from "react-burger-menu"
 
 import Container from "./Container"
-import Icon from "./Icon"
 import IconContainer from "./IconContainer"
 import Links from "./Links"
 import MobileMenu from "./MobileMenu"
 import NavLink from "./NavLink"
+import Background from "./Background"
 
-import Logo from "../../assets/images/logos/mchacks-martlet.svg"
 import SocialMediaBar from "../SocialMedia/SocialMediaBar"
 
 import MLHBanner from "../../assets/images/mlh-trust-badge-2025-white.svg"
@@ -20,11 +19,19 @@ const Nav = ({
   scrollToSponsor,
   scrollToFaq,
   darkBackground = false,
+  docPage = false,
+
 }) => {
   const [hasBorder, setHasBorder] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const handleScroll = () => {
-    setHasBorder(window.pageYOffset > 15)
+    setHasBorder(window.pageYOffset > 20)
+    setScrolled(window.pageYOffset > 500)
   }
+
+  useEffect(() => {
+    console.log(scrolled)
+  }, [scrolled])
 
   useEffect(() => {
     handleScroll()
@@ -52,11 +59,17 @@ const Nav = ({
         </NavLink>
       ) : null}
 
-      {/* <NavLink href="https://app.mchacks.ca" $mobile={mobile}>
+      {docPage ? (
+        <NavLink href="/" $mobile={mobile}>
+          Home
+        </NavLink>
+      ) : null}
+
+      <NavLink href="https://app.mchacks.ca" $mobile={mobile}>
         Apply
       </NavLink>
 
-      <NavLink href="https://forms.gle/2CHq5PZZLxuirVCT6" $mobile={mobile}>
+      {/*<NavLink href="https://forms.gle/2CHq5PZZLxuirVCT6" $mobile={mobile}>
         Volunteer
       </NavLink> */}
     </>
@@ -70,9 +83,6 @@ const Nav = ({
     >
       <div>
         <IconContainer>
-          <Link to="/">
-            <Icon src={Logo} />
-          </Link>
         </IconContainer>
         <Links $hasBorder={hasBorder}>
           {NavItems(false)}
@@ -83,13 +93,16 @@ const Nav = ({
             <a href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white">
               <img
                 src={MLHBanner}
-                alt="Major League Hacking 2024 Hackathon Season"
+                alt="Major League Hacking 2025 Hackathon Season"
               />
             </a>
           </div>
         </Links>
       </div>
-      <Menu isOpen={true} styles={MobileMenu}>
+      <Background $scrolled={scrolled}>
+        <div className="background"></div>
+      </Background>
+      <Menu isOpen={true} styles={MobileMenu} $hasBorder={hasBorder}>
         {NavItems(true)}
       </Menu>
     </Container>

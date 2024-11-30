@@ -1,15 +1,15 @@
 import styled from "styled-components"
 import * as styleVars from "../variable"
 
-import WindowSvg from "../../assets/images/designs/faq-window.svg"
-import WindowSvgMid from "../../assets/images/designs/faq-window-mid.svg"
-import WindowSvgLong from "../../assets/images/designs/faq-window-long.svg"
+import WindowSvg from "../../assets/images/designs/mchacks12-faq-window.svg"
+import WindowSvgMid from "../../assets/images/designs/mchacks12-faq-window-mid.svg"
+import WindowSvgLong from "../../assets/images/designs/mchacks12-faq-window-long.svg"
 
 export const WindowStyles = styled.div`
   --scaling-factor: 1 / 1442 * 100vw;
   position: relative;
   margin: auto;
-  top: 80px;
+  top: 450px;
 
   width: calc(1271 * var(--scaling-factor));
   height: calc(1172 * var(--scaling-factor));
@@ -23,7 +23,8 @@ export const WindowStyles = styled.div`
   background-size: cover;
 
   h2 {
-    color: ${styleVars.hackBlack};
+    font-family: "Press Start 2P";
+    color: ${styleVars.m12DarkestTeal};
     font-size: 36px;
     font-weight: 600;
     padding-bottom: 10px;
@@ -40,6 +41,11 @@ export const WindowStyles = styled.div`
     max-width: 1202px;
 
     padding-top: 65px;
+  }
+
+  .question {
+    font-family: "Space Mono";
+    color: ${styleVars.m12White};
   }
 
   .questions {

@@ -5,6 +5,7 @@ export const Tier = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  max-height: 55vh;
 `
 
 export default Tier

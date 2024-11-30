@@ -9,11 +9,47 @@ export const Content = styled.div`
   margin: auto;
   gap: 40px;
 
-  .color-blur-3 {
+  .bubbles {
+  }
+
+  .bubble-sm {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    width: 5rem;
+  }
+
+  .bubble-md {
+    position: absolute;
+    width: 8rem;
+  }
+
+  .bubble1 {
+    top: 12%;
+    left: 27%;
+  }
+
+  .bubble2 {
+    top: 20%;
+    left: 18%;
+  }
+
+  .bubble3 {
+    top: 25%;
+    left: 23%;
+  }
+
+  .bubble4 {
+    top: 40%;
+    left: 40%;
+  }
+
+  .bubble5 {
+    top: 25%;
+    right: 8%;
+  }
+
+  .bubble6 {
+    bottom: 3%;
+    left: 16%;
   }
 
   @media only screen and (max-width: ${styleVars.mdUp}) {
@@ -22,12 +58,13 @@ export const Content = styled.div`
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 40px;
+
+    .bubbles {
+      display: none;
+    }
   }
 
   @media only screen and (max-width: ${styleVars.smUp}) {
     padding: 0;
-    .color-blur-3 {
-      width: 70%;
-    }
   }
 `

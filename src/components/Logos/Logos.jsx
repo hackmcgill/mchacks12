@@ -29,7 +29,7 @@ const Logos = ({ scrollRef }) => {
     <Container ref={scrollRef}>
       {edges.length > 0 ? (
         <Content>
-          <h1>Past Sponsors</h1>
+          <h1 className="our-sponsors">Our Sponsors</h1>
           {TIERS.map((tier) => (
             <Tier key={tier}>
               {edges

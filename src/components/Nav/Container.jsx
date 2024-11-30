@@ -19,9 +19,20 @@ export const Container = styled.nav`
 
   &.has-border,
   &.dark-background {
-    background-color: ${styleVars.hackGold} !important;
-    box-shadow: 0 2px 6px 3px ${styleVars.hackGold}66 !important;
-    border-bottom: 4px solid ${styleVars.primary};
+    background-color: #3ba4df !important;
+  }
+
+  .home-link {
+    font-family: "ArcadeClassic", sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    color: ${styleVars.m12Red};
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .home-link:hover {
+    color: white;
   }
 `
 

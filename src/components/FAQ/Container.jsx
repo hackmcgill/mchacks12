@@ -1,10 +1,42 @@
 import styled from "styled-components"
 import * as styleVars from "../variable"
 
+import BgGridSquare from "../../assets/images/designs/mchacks12-grid.svg"
+
 const Container = styled.section`
   position: relative;
-  height: 1360px;
-  padding: 0 14px 0 14px;
+  height: 1900px;
+
+  background-color: ${styleVars.m12DarkestTeal};
+
+  background-image:
+  url(${BgGridSquare}),
+  linear-gradient(
+    to bottom, 
+    rgba(26, 112, 118, 1) 0%, 
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 0) 90%,
+    rgba(248, 248, 248, 1) 99%
+  );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 1000px) {
+    height: 2100px;
+  }
+
+  .heartbar {
+    width: 20em;
+    position: absolute;
+    top: 16%;
+    right: 5%;
+
+    @media only screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
 
   .QuestionBox {
     border: 1px solid ${styleVars.hackBlack};
@@ -19,7 +51,7 @@ const Container = styled.section`
     background-color: white;
 
     a {
-      color: ${styleVars.faqBlue1};
+      color: ${styleVars.m12DarkestGrey};
     }
 
     .questionRow {
@@ -42,11 +74,11 @@ const Container = styled.section`
     }
 
     .answer {
-      color: ${styleVars.faqBlack};
+      font-family: "Space Mono";
+      color: ${styleVars.m12DarkestGrey};
       margin-top: 10px;
       font-size: 0.9em;
       display: none;
-      font-family: "Hind Siliguri", sans-serif;
     }
 
     &.expanded {
@@ -62,7 +94,7 @@ const Container = styled.section`
       }
 
       .question {
-        color: ${styleVars.faqBlue3};
+        color: ${styleVars.m12DarkestTeal};
       }
   }
 

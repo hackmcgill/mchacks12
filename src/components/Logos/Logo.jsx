@@ -44,8 +44,8 @@ export const Logo = ({ tier, link, image, alt }) => {
 
 const Content = ({ link, image, alt }) => {
   return (
-    <a href={link}>
-      <img src={image} alt={alt} />
+    <a href={link} target="_blank" rel="noreferrer">
+      <img src={image} alt={alt}/>
     </a>
   )
 }
@@ -61,7 +61,7 @@ const TeraLogo = styled(StyledLogo)`
 const GigaLogo = styled(StyledLogo)`
   a {
     img {
-      height: 235px;
+      height: 200px;
     }
   }
 `
@@ -69,7 +69,8 @@ const GigaLogo = styled(StyledLogo)`
 const MegaLogo = styled(StyledLogo)`
   a {
     img {
-      height: 145px;
+      max-height: 300px;
+      max-width: 250px;
     }
   }
 `
@@ -85,7 +86,8 @@ const KiloLogo = styled(StyledLogo)`
 const ByteLogo = styled(StyledLogo)`
   a {
     img {
-      height: 75px;
+      max-height: 175px;
+      max-width: 150px;
     }
   }
 `

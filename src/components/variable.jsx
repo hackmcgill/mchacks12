@@ -55,6 +55,25 @@ export const buttonHover = "#D03E36"
 export const faqBlue3 = "#598EFB"
 export const faqBlack = "#4D4D4D"
 
+// mchacks 12 colour palette
+// hex values from Figma design
+export const m12LightBlue = "#3BA4DF"
+export const m12SkyBlue = "#8CDCFE"
+export const m12DarkTeal = "#1A7076"
+export const m12DarkestTeal = "#22425A"
+export const m12White = "#FFFFFF"
+export const m12OffWhite = "#E9F0F4"
+export const m12Red = "#F13431"
+export const m12Maroon = "#9A1D49"
+export const m12DarkPurple = "#2E1E86"
+export const m12LightPurple = "#9790BC"
+export const m12DarkestGrey = "#1F2025"
+
+// mchacks 13 colour palette
+// why mchacks 13?
+export const hackRed = "#A51A4B"
+export const hackGrey = "#797979"
+
 // global colors
 export const globalColorPrimary = hackWhite
 

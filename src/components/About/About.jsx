@@ -3,17 +3,24 @@ import React from "react"
 import Container from "./Container"
 import Text from "./Text"
 import Image from "./Image"
-import ColorBlur3 from "../../assets/images/designs/blur-3.png"
 
-import AboutImg from "../../assets/images/designs/about.svg"
+import AboutImg from "../../assets/images/designs/mchacks12-about-image.svg"
+import Bubble from "../../assets/images/designs/mchacks12-bubble.svg"
 import { Content } from "./Content"
 
 const About = ({ scrollRef }) => (
   <Container ref={scrollRef} style={{}}>
     <Content>
-      <img className="color-blur-3" src={ColorBlur3} alt="" />
+      <div className="bubbles">
+        <img className="bubble-sm bubble1" src={Bubble} alt="bubble"></img>
+        <img className="bubble-sm bubble2" src={Bubble} alt="bubble"></img>
+        <img className="bubble-sm bubble3" src={Bubble} alt="bubble"></img>
+        <img className="bubble-md bubble4" src={Bubble} alt="bubble"></img>
+        <img className="bubble-md bubble5" src={Bubble} alt="bubble"></img>
+        <img className="bubble-sm bubble6" src={Bubble} alt="bubble"></img>
+      </div>
       <Text>
-        <h2>Dream. Develop. Deploy!</h2>
+        <h2>Dream.develop.deploy!</h2>
         <p>
           For 24 hours, over 500 of the boldest young minds across the globe
           come together for a jam-packed online weekend of beginner-to-pro
