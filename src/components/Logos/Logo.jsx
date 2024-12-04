@@ -97,6 +97,7 @@ const InKindLogo = styled(StyledLogo)`
     img {
       max-height: 75px;
       max-width: 125px;
+      
     }
   }
 `
