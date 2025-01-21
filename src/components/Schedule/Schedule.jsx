@@ -49,7 +49,7 @@ const Schedule = ({ visible }) => {
             role="button"
             tabIndex={0}
           >
-            Saturday, Jan. 27
+            Saturday, Jan. 25
           </div>
           <div
             className={"DayTab " + (day === 2 ? "active" : "")}
@@ -58,7 +58,7 @@ const Schedule = ({ visible }) => {
             role="button"
             tabIndex={0}
           >
-            Sunday, Jan. 28
+            Sunday, Jan. 26
           </div>
         </div>
       </Sticky>

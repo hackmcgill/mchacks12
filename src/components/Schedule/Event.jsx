@@ -48,7 +48,7 @@ const Event = ({
           {startTime
             ? startTime.toLowerCase().includes("am") ||
               startTime.toLowerCase().includes("pm")
-              ? " ET"
+              ? ""
               : ""
             : "TBD"}
           <br />

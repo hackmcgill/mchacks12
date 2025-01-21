@@ -26,7 +26,7 @@ export const Container = styled.nav`
     font-family: "ArcadeClassic", sans-serif;
     font-size: 24px;
     cursor: pointer;
-    color: ${styleVars.m12Red};
+    color: ${styleVars.m12Maroon};
     text-decoration: none;
     transition: color 0.3s ease;
   }

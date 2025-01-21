@@ -30,6 +30,7 @@ export const WindowStyles = styled.div`
     padding-bottom: 10px;
   }
 
+
   .content {
     position: relative;
     top: min(154px, calc(154 * var(--scaling-factor)));
@@ -40,7 +41,13 @@ export const WindowStyles = styled.div`
     max-height: 693px;
     max-width: 1202px;
 
-    padding-top: 65px;
+    padding-top: 270px;
+    top: -130px;
+  }
+
+  .question {
+    font-family: "Space Mono";
+    color: ${styleVars.m12White};
   }
 
   .question {
@@ -109,7 +116,7 @@ export const WindowStyles = styled.div`
       width: 100%;
       max-height: none;
       padding-top: 80px;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
       padding-left: 40px;
       padding-right: 40px;
     }

@@ -55,6 +55,10 @@ const FAQ = ({ scrollRef }) => (
               Teams can be up to four people.
             </Question>
 
+            <Question question="How are projects judged?">
+              See our judging criteria <a href="https://docs.google.com/document/d/1N4i41ATAZFmWyADjulUxcGhgkOhRokwbFWWRwMFbB24/edit?usp=sharing" target="_blank">here</a> for more information.
+            </Question>
+
             <Question question="I have more questions!">
               We have answers! Feel free to send us a DM on Facebook, Instagram,
               or Twitter, or email us at{" "}

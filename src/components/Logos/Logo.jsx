@@ -70,7 +70,7 @@ const MegaLogo = styled(StyledLogo)`
   a {
     img {
       max-height: 300px;
-      max-width: 250px;
+      max-width: 275px;
     }
   }
 `
@@ -95,7 +95,9 @@ const ByteLogo = styled(StyledLogo)`
 const InKindLogo = styled(StyledLogo)`
   a {
     img {
-      height: 75px;
+      max-height: 75px;
+      max-width: 125px;
+      
     }
   }
 `

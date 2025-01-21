@@ -30,6 +30,12 @@ const LiveNav = ({ switchPage = () => {}, activePage }) => {
       >
         Schedule
       </NavLink>
+      <NavLink
+        onClick={() => switchPage("judging")}
+        className={activePage === "judging" ? "active" : ""}
+      >
+        Judging
+      </NavLink>
     </>
   )
   return (
