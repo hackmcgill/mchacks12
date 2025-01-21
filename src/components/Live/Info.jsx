@@ -23,8 +23,7 @@ const Info = ({ visible }) => (
               under <b>Schedule</b>.
             </li>
             <li>
-              Get access to our sponsors’ APIs and resources available for you
-              to use during McHacks under <b>Sponsor Resources</b>.
+              View judging criteria and guidelines under <b>Judging</b>.
             </li>
             {/*<li>
               Learn the ins and outs of Discord with our comprehensive{" "}

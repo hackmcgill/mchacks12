@@ -5,6 +5,7 @@ import LiveNav from "../components/Live/LiveNav"
 import Schedule from "../components/Schedule/Schedule"
 import Info from "../components/Live/Info"
 import Resources from "../components/Live/Resources"
+import Judging from "../components/Live/Judging"
 
 const LivePage = () => {
   const [activePage, _setActivePage] = useState("info")
@@ -21,6 +22,7 @@ const LivePage = () => {
       <LiveNav switchPage={setActivePage} activePage={activePage} />
       <Info visible={activePage === "info"} />
       <Schedule visible={activePage === "schedule"} />
+      <Judging visible={activePage === "judging"} />
       {/*<Resources visible={activePage === "resources"} />*/}
     </div>
   )

@@ -14,7 +14,7 @@ const CodeOfConductPage = () => {
   return (
     <div>
       <SEO />
-      <Nav darkBackground={true} docPage={true}/>
+      <Nav darkBackground={true} docPage={true} hiddenBackground={true}/>
       <CodeofConduct />
       <Footer />
     </div>
