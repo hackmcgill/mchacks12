@@ -3,7 +3,7 @@ import React from "react"
 const events = [
   {
     day: 1,
-    name: "Opening Cermony",
+    name: "Opening Ceremony",
     type: "Main Event",
     startTime: "7:00 PM",
   },
