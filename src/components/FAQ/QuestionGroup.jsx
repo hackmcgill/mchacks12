@@ -9,7 +9,7 @@ const QuestionGroup = ({ children }) => {
     } else {
       setExpandedQuestion(i)
     }
-  }
+  } 
 
   return React.Children.map(children, (child, i) => {
     return React.cloneElement(child, {

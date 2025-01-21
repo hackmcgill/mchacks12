@@ -18,9 +18,10 @@ const Nav = ({
   scrollToAbout,
   scrollToSponsor,
   scrollToFaq,
+  schedule,
   darkBackground = false,
   docPage = false,
-
+  hiddenBackground = false,
 }) => {
   const [hasBorder, setHasBorder] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -56,6 +57,12 @@ const Nav = ({
       {scrollToFaq ? (
         <NavLink onClick={scrollToFaq} $mobile={mobile}>
           FAQ
+        </NavLink>
+      ) : null}
+
+      {schedule ? (
+        <NavLink href="/schedule" $mobile={mobile}>
+          Schedule
         </NavLink>
       ) : null}
 
@@ -100,7 +107,7 @@ const Nav = ({
         </Links>
       </div>
       <Background $scrolled={scrolled}>
-        <div className="background"></div>
+        <div className={`background ${hiddenBackground ? "hidden" : ""}`}></div>
       </Background>
       <Menu isOpen={true} styles={MobileMenu} $hasBorder={hasBorder}>
         {NavItems(true)}

@@ -118,6 +118,7 @@ export const Container = styled.section`
           color: ${styleVars.hackBlack70};
           font-family: "Hind Siliguri", sans-serif;
           margin-top: 8px;
+          font-size: 16px;
           a {
             color: ${styleVars.darkSecondaryBlue};
           }

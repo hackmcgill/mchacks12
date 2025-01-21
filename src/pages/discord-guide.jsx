@@ -14,7 +14,7 @@ const DiscordGuidePage = () => {
   return (
     <div>
       <SEO />
-      <Nav darkBackground={true} docPage={true}/>
+      <Nav darkBackground={true} docPage={true} hiddenBackground={true}/>
       <DiscordGuide />
       <Footer />
     </div>

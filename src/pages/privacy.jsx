@@ -14,7 +14,7 @@ const PrivacyPage = () => {
   return (
     <div>
       <SEO />
-      <Nav darkBackground={true} docPage={true}/>
+      <Nav darkBackground={true} docPage={true} hiddenBackground={true}/>
       <Privacy />
       <Footer />
     </div>

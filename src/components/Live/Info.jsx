@@ -4,6 +4,8 @@ import Text from "../Discord/Text"
 
 import Container from "../Discord/Container"
 
+const DISCORD_LINK = "https://discord.gg/nE3bfXJaM9"
+
 const Info = ({ visible }) => (
   <Container className={!visible ? "hidden" : ""}>
     <Content>
@@ -23,8 +25,7 @@ const Info = ({ visible }) => (
               under <b>Schedule</b>.
             </li>
             <li>
-              Get access to our sponsors’ APIs and resources available for you
-              to use during McHacks under <b>Sponsor Resources</b>.
+              View judging criteria and guidelines under <b>Judging</b>.
             </li>
             {/*<li>
               Learn the ins and outs of Discord with our comprehensive{" "}
@@ -40,11 +41,10 @@ const Info = ({ visible }) => (
           the Discord as it is the main form of communication between hackers,
           judges, sponsors, and organizers during McHacks.*/}
 
-          Coming Soon:
-          Discord server for announcements, event Zoom links, to chat with other
+          Discord server for announcements, to chat with other
           hackers, and to form teams. It’s important for all hackers to be in
           the Discord as it is the main form of communication between hackers,
-          judges, sponsors, and organizers during McHacks.
+          judges, sponsors, and organizers during McHacks. You can access the Discord Server <a href={DISCORD_LINK} target="_blank">here</a>.
 
           <br />
           <br />
@@ -62,7 +62,7 @@ const Info = ({ visible }) => (
           green Organizer role, or post in <b>#troubleshooting</b> or{" "}
           <b>#ask-organizers</b> for help.*/}
 
-          Feel free to get in touch by email if you have any questions or concerns!
+          Feel free to get in touch by email at <b>contact@mchacks.ca</b> if you have any questions or concerns!
         </p>
         <br />
         Happy hacking,
