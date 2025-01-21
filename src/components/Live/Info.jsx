@@ -40,7 +40,6 @@ const Info = ({ visible }) => (
           hackers, and to form teams. It’s important for all hackers to be in
           the Discord as it is the main form of communication between hackers,
           judges, sponsors, and organizers during McHacks.*/}
-
           Discord server for announcements, to chat with other
           hackers, and to form teams. It’s important for all hackers to be in
           the Discord as it is the main form of communication between hackers,
@@ -61,7 +60,6 @@ const Info = ({ visible }) => (
           questions or concerns! To reach us, you can DM any organizer with the
           green Organizer role, or post in <b>#troubleshooting</b> or{" "}
           <b>#ask-organizers</b> for help.*/}
-
           Feel free to get in touch by email at <b>contact@mchacks.ca</b> if you have any questions or concerns!
         </p>
         <br />

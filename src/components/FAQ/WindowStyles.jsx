@@ -50,6 +50,11 @@ export const WindowStyles = styled.div`
     color: ${styleVars.m12White};
   }
 
+  .question {
+    font-family: "Space Mono";
+    color: ${styleVars.m12White};
+  }
+
   .questions {
     width: 40%;
     margin: auto;

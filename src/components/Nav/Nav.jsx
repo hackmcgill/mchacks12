@@ -59,13 +59,11 @@ const Nav = ({
           FAQ
         </NavLink>
       ) : null}
-
       {schedule ? (
         <NavLink href="/schedule" $mobile={mobile}>
           Schedule
         </NavLink>
       ) : null}
-
       {docPage ? (
         <NavLink href="/" $mobile={mobile}>
           Home
