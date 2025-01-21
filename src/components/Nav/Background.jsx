@@ -22,6 +22,10 @@ export const Background = styled.div`
         opacity: ${(props) => (props.$scrolled ? 0 : 1)};
         z-index: -1;
     }
+    
+    .hidden {
+        display: none;
+    }
 
     @media only screen and (max-width: ${styleVars.lgUp}) {
         .background {

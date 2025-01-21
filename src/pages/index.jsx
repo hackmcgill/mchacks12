@@ -39,6 +39,7 @@ const IndexPage = () => {
         scrollToAbout={() => scrollTo(aboutRef, -200)}
         scrollToSponsor={() => scrollTo(sponsorRef, -150)}
         scrollToFaq={() => scrollTo(faqRef, -350)}
+        schedule={true}
         darkBackground={true}
       />
       <Hero />

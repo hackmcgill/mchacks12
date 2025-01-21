@@ -8,7 +8,7 @@ const SchedulePage = () => {
   return (
     <div>
       <SEO />
-      <Nav darkBackground={true} />
+      <Nav darkBackground={true} hiddenBackground={true} docPage={true}/>
       <Schedule visible={true} />
       <Footer />
     </div>
