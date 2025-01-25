@@ -1,6 +1,7 @@
 import React from "react"
 import Container from "./SocialMediaBarContainer"
 
+import Discord from "../../assets/images/logos/discord.svg"
 import Devpost from "../../assets/images/logos/mchacks12-devpost-logo.svg"
 import Facebook from "../../assets/images/logos/mchacks12-fb-logo.svg"
 import GitHub from "../../assets/images/logos/mchacks12-github-logo.svg"
@@ -9,6 +10,11 @@ import Twitter from "../../assets/images/logos/mchacks12-x-logo.svg"
 
 const SocialMediaBar = () => (
   <Container>
+    <div className="SocialMediaBar__icon">
+      <a href="https://discord.gg/bVG5uHQz" target="_blank" rel="noopener noreferrer">
+        <img src={Discord} alt="Discord" />
+      </a>
+    </div>
     <div className="SocialMediaBar__icon">
       <a href="https://mchacks-12.devpost.com/" target="_blank" rel="noopener noreferrer">
         <img src={Devpost} alt="Devpost" />
