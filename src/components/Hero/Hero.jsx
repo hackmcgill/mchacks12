@@ -52,9 +52,9 @@ const Hero = () => (
         <img className="hero__cloud2" src={Cloud2} alt="Cloud2" />
         <img className="hero__cloud3" src={Cloud3} alt="Cloud3" />
       </div>
-      <Button disabled={false} onClick={apply}>
+      {/*<Button disabled={false} onClick={apply}>
         Apply Now →
-      </Button>
+      </Button>*/}
       <div className="hero__grid__signup">
         <SignUpForm className="hero__signup" />
       </div>
