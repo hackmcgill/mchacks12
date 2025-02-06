@@ -57,9 +57,9 @@ const Hero = () => (
           <SignUpForm />
         </div>
       </div>
-      <Button disabled={false} onClick={apply}>
+      {/*<Button disabled={false} onClick={apply}>
         Apply Now →
-      </Button>
+      </Button>*/}
       {/* <Button onClick={live}>Live Site →</Button> */}
     </div>
   </HeroStyles>
