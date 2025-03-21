@@ -29,7 +29,6 @@ const SocialMediaBar = () => (
         <img src={Facebook} alt="Facebook" />
       </a>
     </div>
-
     <div className="SocialMediaBar__icon">
       <a
         href="https://www.instagram.com/mcgillhacks/"
